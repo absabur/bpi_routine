@@ -25,6 +25,10 @@ code {
   width: 50%;
   margin: 2rem auto;
 }
+img {
+  width: 100px;
+  height: 100px;
+}
 .nav_display {
   display: flex;
   align-items: center;

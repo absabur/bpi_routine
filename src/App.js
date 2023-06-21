@@ -9,6 +9,7 @@ import Shift_selection from "./components/Shift_selection";
 import Semester from "./components/Semester";
 import ShowRoutine from "./components/ShowRoutine";
 import Footer from "./components/Footer";
+import logo from './images/logo.jpg'
 
 function App() {
   const [first, setfirst] = useState(true);
@@ -27,7 +28,7 @@ function App() {
         value={{ first, setfirst, second, setsecond, third, setthird, fourth, setfourth, routinePath,setroutinePath,color, setcolor, bg, setbg }}
       >
         <div className="cap1">
-          <img src="images/logo.jpg" alt="" />
+          <img src={logo} alt="logo" />
           <h1>Bogra Polytechnic Institute</h1>
           <h1>Class Routine</h1>
         </div>

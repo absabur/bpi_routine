@@ -26,7 +26,6 @@ const Cst_1_2 = () => {
   return (
     <div className="main">
       <div className="cap">
-        <img src="../../../images/logo.jpg" alt="" />
         Department: Computer Science & Technology
         <br />
         <br />
