@@ -32,14 +32,15 @@ function App() {
           <h1>Bogra Polytechnic Institute</h1>
           <h1>Class Routine</h1>
         </div>
+        <h4 className="warning">Refresh the page to back previous page.</h4>
 
-        <Marquee className="gradient__text">
-          For any correction in routine knock me. 
+        <h3 className="gradient__text">
+          For any correction in routine knock me.
           <a 
           href="https://www.facebook.com/profile.php?id=100027012382655"
           target="blank"><FaFacebook className="f-icon" />
           </a>
-        </Marquee>
+        </h3>
 
         {first ? <Technology /> : null}
         {second ? <Shift_selection /> : null}

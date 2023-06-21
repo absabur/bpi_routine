@@ -50,28 +50,37 @@ img {
   box-shadow: 0 0 15px black;
   background-color: bisque;
 }
+.warning {
+  color: #ff0000;
+  margin: 1rem 0;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-   .gradient__text {
-    background: linear-gradient(89.97deg, #ff0000, #2f00ff );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 1rem 0;
-    font-size: 30px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .f-icon{
-    border-radius: 50%;
-    color: #1e47a0;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-  }
+.gradient__text {
+  color: #00ff2a;
+  margin: 1rem 0;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+.f-icon{
+  border-radius: 50%;
+  color: #1e47a0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  margin: 0.5rem;
+}
 
   .f-icon:hover {
     box-shadow: 0 0 10px rgb(0, 0, 0);
