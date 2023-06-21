@@ -212,7 +212,7 @@
   @media screen and (max-width: 620px) {
     table {
       margin-top: 10px;
-      transform: scale(0.38);
+      transform: scale(0.33);
     }
     .landscape {
       display: block;
@@ -253,7 +253,7 @@
   }
   @media screen and (max-width: 450px) {
     table {
-      transform: scale(0.28);
+      transform: scale(0.30);
     }
   }
   

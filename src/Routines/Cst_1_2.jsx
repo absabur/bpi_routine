@@ -13,7 +13,7 @@ const Cst_1_2 = () => {
     if (e.target.textContent == "Potrait") {
       e.target.innerHTML = "Landscape";
       setrotate(() => {
-        return { transform: "rotate(0deg) scale(0.28)" };
+        return { transform: "rotate(0deg) scale(0.32)" };
       });
     } else {
       e.target.innerHTML = "Potrait";
