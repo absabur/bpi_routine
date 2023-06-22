@@ -218,7 +218,6 @@ const Cst_1_2 = () => {
           <td colSpan="4">
             <p style={bg}>
               <span style={color}>
-                {" "}
                 Mathematics-III <br />
                 Room: 1305
               </span>
