@@ -11,13 +11,13 @@ const Cst_1_6 = () => {
 
   return (
     <div className="main">
+
+      <CustomColor />
+      <Rotate />
+      
       <div className="cap">
         <p>{routineHead}</p>
       </div>
-
-      <CustomColor />
-
-      <Rotate />
 
       <table style={rotate}>
         <Period />

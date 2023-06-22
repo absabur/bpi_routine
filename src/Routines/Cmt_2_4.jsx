@@ -11,14 +11,14 @@ const Cmt_2_4 = () => {
 
   return (
     <div className="main">
+
+      <CustomColor />
+      <Rotate />
+      
       <div className="cap">
         <p>{routineHead}</p>
       </div>
-
-      <CustomColor />
-
-      <Rotate />
-
+      
       <table style={rotate}>
         <Period />
         <TimeDuration />
