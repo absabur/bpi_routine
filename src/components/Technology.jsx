@@ -4,46 +4,47 @@ import GlobalState from "./GlobalState";
 import Footer from "./Footer";
 
 const Technology = () => {
-  const { first, setfirst, second, setsecond, routinePath, setroutinePath } =
+  const { first, setfirst, second, setsecond, routinePath, setroutinePath, routineHead, setroutineHead} =
     useContext(GlobalState);
 
-  const handleSub = (sub) => {
+  const handleSub = (e, sub) => {
     setfirst(!first);
     setsecond(!second);
     setroutinePath(routinePath+sub)
+    setroutineHead(routineHead+e+', ')
   };
 
   return (
     <>
       <div className="nav_display">
-        <button onClick={() => handleSub("cst")}>
+        <button onClick={() => handleSub("Computer Science and Technology" ,"cst")}>
           <h3>Computer Science and Technology</h3>
         </button>
-        <button onClick={() => handleSub("et")}>
+        <button onClick={() => handleSub("Electrical Technology","et")}>
           <h3>Electrical Technology</h3>
         </button>
-        <button onClick={() => handleSub("cmt")}>
+        <button onClick={() => handleSub("Computer Technology","cmt")}>
           <h3>Computer Technology</h3>
         </button>
-        <button onClick={() => handleSub("ct")}>
+        <button onClick={() => handleSub("Civil Technology","ct")}>
           <h3>Civil Technology</h3>
         </button>
-        <button onClick={() => handleSub("mt")}>
+        <button onClick={() => handleSub("Mechanical Technology","mt")}>
           <h3>Mechanical Technology</h3>
         </button>
-        <button onClick={() => handleSub("pt")}>
+        <button onClick={() => handleSub("Power Technology","pt")}>
           <h3>Power Technology</h3>
         </button>
-        <button onClick={() => handleSub("rac")}>
+        <button onClick={() => handleSub("Refrigeration & Air Conditioning Technology","rac")}>
           <h3>Refrigeration & Air Conditioning Technology</h3>
         </button>
-        <button onClick={() => handleSub("ent")}>
+        <button onClick={() => handleSub("Electronics Technology","ent")}>
           <h3>Electronics Technology</h3>
         </button>
-        <button onClick={() => handleSub("mnt")}>
+        <button onClick={() => handleSub("Mining Technology","mnt")}>
           <h3>Mining Technology</h3>
         </button>
-        <button onClick={() => handleSub("th")}>
+        <button onClick={() => handleSub("Tourism and Hospitality","th")}>
           <h3>Tourism and Hospitality</h3>
         </button>
       </div>

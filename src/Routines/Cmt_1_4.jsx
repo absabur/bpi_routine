@@ -6,7 +6,7 @@ import Rotate from "./Styling/Rotate";
 import Period from "./CommonPartTable/Period";
 import TimeDuration from "./CommonPartTable/TimeDuration";
 
-const Cst_2_2 = () => {
+const Cmt_1_4 = () => {
   const { color, bg, rotate, routineHead } = useContext(GlobalState);
 
   return (
@@ -230,5 +230,4 @@ const Cst_2_2 = () => {
   );
 };
 
-
-export default Cst_2_2
+export default Cmt_1_4

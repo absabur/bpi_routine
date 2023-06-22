@@ -17,6 +17,8 @@ function App() {
   const [third, setthird] = useState(false)
   const [fourth, setfourth] = useState(false)
   const [routinePath, setroutinePath] = useState('')
+  const [routineHead, setroutineHead] = useState('')
+  const [rotate, setrotate] = useState({ transform: "" });
 
   
   const [color, setcolor] = useState({color:'white'})
@@ -25,7 +27,7 @@ function App() {
   return (
     <>
       <GlobalState.Provider
-        value={{ first, setfirst, second, setsecond, third, setthird, fourth, setfourth, routinePath,setroutinePath,color, setcolor, bg, setbg }}
+        value={{ first, setfirst, second, setsecond, third, setthird, fourth, setfourth, routinePath,setroutinePath,color, setcolor, bg, setbg, rotate, setrotate, routineHead, setroutineHead  }}
       >
         <div className="cap1">
           <img src={logo} alt="logo" />

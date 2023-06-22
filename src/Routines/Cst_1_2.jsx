@@ -1,137 +1,27 @@
-import React, { useContext, useState } from "react";
-import CustomColor from "./CustomColor";
+import React, { useContext } from "react";
+import CustomColor from "./Styling/CustomColor";
 import GlobalState from "../components/GlobalState";
-import Footer from "../components/Footer";
 import { GiTireIronCross } from "react-icons/gi";
-// import style from "./customcss";
+import Rotate from "./Styling/Rotate";
+import Period from "./CommonPartTable/Period";
+import TimeDuration from "./CommonPartTable/TimeDuration";
 
 const Cst_1_2 = () => {
-  const { color, bg } = useContext(GlobalState);
-  const [rotate, setrotate] = useState({ transform: "" });
-
-  const portrait = (e) => {
-    if (e.target.textContent == "Potrait") {
-      e.target.innerHTML = "Landscape";
-      setrotate(() => {
-        return { transform: "rotate(0deg) scale(0.32)" };
-      });
-    } else {
-      e.target.innerHTML = "Potrait";
-      setrotate(() => {
-        return { transform: "rotate(90deg) scale(0.45)" };
-      });
-    }
-  };
+  const { color, bg, rotate, routineHead } = useContext(GlobalState);
 
   return (
     <div className="main">
       <div className="cap">
-        Department: Computer Science & Technology
-        <br />
-        <br />
-        2nd Semester , 1st Shift
+        <p>{routineHead}</p>
       </div>
 
       <CustomColor />
 
-      <button className="landscape" onClick={portrait} type="button">
-        Landscape
-      </button>
+      <Rotate />
 
       <table style={rotate}>
-        <tr className="b">
-          <th>
-            <p style={bg}>
-              <span style={color}>Period</span>
-            </p>
-          </th>
-          <th>
-            <p style={bg}>
-              <span style={color}>1st</span>
-            </p>
-          </th>
-          <th>
-            <p style={bg}>
-              <span style={color}>2nd</span>
-            </p>
-          </th>
-          <th>
-            <p style={bg}>
-              <span style={color}>3rd</span>
-            </p>
-          </th>
-
-          <th>
-            <p style={bg}>
-              <span style={color}>4th</span>
-            </p>
-          </th>
-
-          <th>
-            <p style={bg}>
-              <span style={color}>5th</span>
-            </p>
-          </th>
-
-          <th>
-            <p style={bg}>
-              <span style={color}>6th</span>
-            </p>
-          </th>
-
-          <th>
-            <p style={bg}>
-              <span style={color}>7th</span>
-            </p>
-          </th>
-        </tr>
-
-        <tr>
-          <td>
-            <p style={bg}>
-              <span style={color}>DAY / TIME</span>
-            </p>
-          </td>
-          <td>
-            <p style={bg}>
-              <span style={color}>1:30-2:15</span>
-            </p>
-          </td>
-          <td>
-            <p style={bg}>
-              <span style={color}>2:15-3:00</span>
-            </p>
-          </td>
-          <td>
-            <p style={bg}>
-              <span style={color}>3:00-3:45</span>
-            </p>
-          </td>
-
-          <td>
-            <p style={bg}>
-              <span style={color}>3:45-4:30</span>
-            </p>
-          </td>
-
-          <td>
-            <p style={bg}>
-              <span style={color}>4:30-5:15</span>
-            </p>
-          </td>
-
-          <td>
-            <p style={bg}>
-              <span style={color}>5:15-6:00</span>
-            </p>
-          </td>
-
-          <td>
-            <p style={bg}>
-              <span style={color}>6:00-6:45</span>
-            </p>
-          </td>
-        </tr>
+        <Period />
+        <TimeDuration />
 
         <tr className="b">
           <td>
@@ -336,7 +226,6 @@ const Cst_1_2 = () => {
           </td>
         </tr>
       </table>
-
     </div>
   );
 };

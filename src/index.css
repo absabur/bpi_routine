@@ -22,12 +22,14 @@ code {
   background-color: rgb(183, 252, 169);
   box-shadow: 0 0 20px black;
   padding: 1rem;
-  width: 50%;
+  width: 70%;
   margin: 2rem auto;
 }
 img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+  border-radius: 50%;
 }
 .nav_display {
   display: flex;
@@ -51,7 +53,9 @@ img {
   background-color: bisque;
 }
 .warning {
-  color: #ff0000;
+  background: -webkit-linear-gradient(#ff0000, #1900ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 1rem 0;
   font-size: 15px;
   width: 100%;
@@ -62,7 +66,9 @@ img {
 }
 
 .gradient__text {
-  color: #00ff2a;
+  background: -webkit-linear-gradient(#ff0080, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 1rem 0;
   font-size: 30px;
   width: 100%;

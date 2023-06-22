@@ -90,6 +90,7 @@
     display: none;
     padding: 0.5rem;
     background-color: greenyellow;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     outline: none;
@@ -97,7 +98,7 @@
     font-weight: 700;
   }
   .landscape:hover {
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
     background-color: tomato;
   }
   
