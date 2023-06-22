@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 import { FaFacebook } from "react-icons/fa";
-import Marquee from "react-fast-marquee";
+import { GrRefresh } from "react-icons/gr";
+
 
 import Technology from "./components/Technology";
 import GlobalState from "./components/GlobalState";
@@ -34,7 +35,7 @@ function App() {
           <h1>Bogra Polytechnic Institute</h1>
           <h1>Class Routine</h1>
         </div>
-        <h4 className="warning">Refresh the page to back previous page.</h4>
+        <h4 className="warning">Refresh the page to back previous page. <button style={{background: "transparent", border: 'none'}} onClick={()=> window.location.reload(true)}><GrRefresh className="r-icon" /></button></h4>
 
         <h3 className="gradient__text">
           For any correction in routine knock me.

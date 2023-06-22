@@ -78,6 +78,16 @@ img {
   justify-content: center;
   padding: 0.5rem 1rem;
 }
+.r-icon {
+  font-size: 25px;
+  border-radius: 50%;
+  color: #51ff00;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  margin: 0.5rem;
+}
 .f-icon{
   border-radius: 50%;
   color: #1e47a0;
@@ -88,7 +98,7 @@ img {
   margin: 0.5rem;
 }
 
-  .f-icon:hover {
+  .f-icon:hover, .r-icon:hover {
     box-shadow: 0 0 10px rgb(0, 0, 0);
   }
 
