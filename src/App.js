@@ -22,8 +22,8 @@ function App() {
   const [rotate, setrotate] = useState({ transform: "" });
 
   
-  const [color, setcolor] = useState({color:'white'})
-  const [bg, setbg] = useState({backgroundColor:'black'})
+  const [color, setcolor] = useState({color:'rgb(119, 44, 78)'})
+  const [bg, setbg] = useState({backgroundColor:'rgb(247, 255, 165)'})
 
   return (
     <>
