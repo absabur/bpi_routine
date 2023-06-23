@@ -6,7 +6,8 @@ import "./Styling/routine.css";
 
 
 const RenderRoutine = () => {
-    const {routinePath} = useContext(GlobalState)
+    const {routinePath, routineHead} = useContext(GlobalState)
+    
 
     const renderRoutine = () => {
         if (routinePath == "cst1st2nd") {
@@ -31,10 +32,10 @@ const RenderRoutine = () => {
           return <Cmt_2_2 />
         }else if (routinePath == "cmt2nd4th") {
           return <Cmt_2_4 />
-        }else if (routinePath == "cmt2nd6th") {
+        }else if (routinePath == "et2nd2ndc") {
           return <Cmt_2_6 />
         }else{
-          return <p>Routine can not find.</p>
+          return <h6 style={{textAlign: "center", fontSize: "24px", fontWeight: "600"}}>Routine can not find. <br />({routineHead})<br /> is not exists.</h6>
         }
       }
   return (

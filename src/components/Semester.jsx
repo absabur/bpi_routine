@@ -4,12 +4,16 @@ import Footer from './Footer'
 
 const Semester = () => {
 
-    const {third, setthird, fourth, setfourth, routinePath, setroutinePath, routineHead, setroutineHead} = useContext(GlobalState)
+    const {third, setthird, fourth, setfourth, routinePath, setroutinePath, routineHead, setroutineHead, isGroup, showGroup, setshowGroup} = useContext(GlobalState)
     const handleSemester = (e,semester) => {
         setthird(!third)
-        setfourth(!fourth)
+        if (isGroup === true) {
+          setshowGroup(!showGroup)
+        }else {
+          setfourth(!fourth)
+        }
         setroutinePath(routinePath+semester)
-        setroutineHead(routineHead+e)
+        setroutineHead(routineHead+e +", ")
     }
   return (
     <>

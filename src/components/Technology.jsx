@@ -4,7 +4,7 @@ import GlobalState from "./GlobalState";
 import Footer from "./Footer";
 
 const Technology = () => {
-  const { first, setfirst, second, setsecond, routinePath, setroutinePath, routineHead, setroutineHead} =
+  const { first, setfirst, second, setsecond, routinePath, setroutinePath, routineHead, setroutineHead, isGroup, setisGroup} =
     useContext(GlobalState);
 
   const handleSub = (e, sub) => {
@@ -12,6 +12,9 @@ const Technology = () => {
     setsecond(!second);
     setroutinePath(routinePath+sub)
     setroutineHead(routineHead+e+', ')
+    if (sub == "mt" || sub == "et") {
+      setisGroup(!isGroup)
+    }
   };
 
   return (

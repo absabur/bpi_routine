@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import GlobalState from "./GlobalState";
-import Footer from "./Footer";
 
 const Shift_selection = () => {
   const { setsecond, second, third, setthird, routinePath, setroutinePath,routineHead, setroutineHead } = useContext(GlobalState);
