@@ -22,8 +22,8 @@ function App() {
   const [rotate, setrotate] = useState({ transform: "" });
 
   
-  const [color, setcolor] = useState({color:'rgb(119, 44, 78)'})
-  const [bg, setbg] = useState({backgroundColor:'rgb(247, 255, 165)'})
+  const [color, setcolor] = useState({color:'aqua'})
+  const [bg, setbg] = useState({backgroundColor:'black'})
 
   return (
     <>
@@ -32,9 +32,12 @@ function App() {
       >
         <div className="cap1">
           <img src={logo} alt="logo" />
-          <h1>Bogra Polytechnic Institute</h1>
-          <h1>Class Routine</h1>
+          <div>
+            <h1>Bogra Polytechnic Institute.</h1><br />
+            <h1>Class Routine</h1>
+          </div>
         </div>
+        
         <h4 className="warning">Refresh the page to back previous page. <button style={{background: "transparent", border: 'none'}} onClick={()=> window.location.reload(true)}><GrRefresh className="r-icon" /></button></h4>
 
         <h3 className="gradient__text">

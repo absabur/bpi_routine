@@ -8,12 +8,12 @@ const Rotate = () => {
     if (e.target.textContent == "Potrait") {
       e.target.innerHTML = "Landscape";
       setrotate(() => {
-        return { transform: "rotate(0deg)" };
+        return { transform: "rotate(0deg) scale(1)" };
       });
     } else {
       e.target.innerHTML = "Potrait";
       setrotate(() => {
-        return { transform: "rotate(90deg) scale(1.1)", margin: "7.5rem auto" };
+        return { transform: "rotate(90deg) scale(1.2)", margin: "10rem auto" };
       });
     }
   };

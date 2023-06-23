@@ -1,22 +1,15 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Kalam', cursive;
 }
 
 .cap1 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
   border: 1px double rgb(0, 0, 0);
   border-radius: 10px;
   background-color: rgb(183, 252, 169);
@@ -36,6 +29,7 @@ img {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  font-family: 'Kalam', cursive;
 }
 .nav_display button {
   margin: 1rem 0;
@@ -56,7 +50,7 @@ img {
   background: -webkit-linear-gradient(#ff0000, #1900ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 1rem 0;
+  margin: 0;
   font-size: 15px;
   width: 100%;
   text-align: center;
@@ -69,14 +63,14 @@ img {
   background: -webkit-linear-gradient(#ff0080, #0077ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 1rem 0;
+  margin: 0;
   font-size: 30px;
   width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem;
 }
 .r-icon {
   font-size: 25px;
@@ -86,7 +80,7 @@ img {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  margin: 0.5rem;
+  margin: 0.2rem;
 }
 .f-icon{
   border-radius: 50%;
@@ -95,7 +89,7 @@ img {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  margin: 0.5rem;
+  margin: 0.2rem;
 }
 
   .f-icon:hover, .r-icon:hover {
@@ -121,10 +115,17 @@ img {
 }
 
 @media screen and (max-width: 620px) {
+  .cap1 {
+    padding: 0.3rem;
+    width: 95%;
+  }
   .gradient__text {
     font-size: 18px;
     flex-direction: column;
     width: 100%;
+  }
+  .warning {
+    flex-direction: column;
   }
   .nav_display button {
     margin: 0.5rem 0;
@@ -132,5 +133,8 @@ img {
   img {
     height: 100px;
     width: 100px;
+  }
+  .f-icon {
+    font-size: 30px;
   }
 }
