@@ -151,6 +151,9 @@ html {
   font-family: 'Josefin Sans','Philosopher', sans-serif;
   margin: auto;
 }
+.p2 p, .p3 p, .h p{
+  font-size: 1.75vw;
+}
 .p1 {
   max-width: 12.5%;
   min-width: 12.5%;
@@ -245,8 +248,8 @@ html {
     font-weight: 700;
   }
   .row .h {
-    min-height: 30px;
-    max-height: 30px;
+    min-height: 38px;
+    max-height: 38px;
   }
 }
 @media screen and (max-width: 620px) {
@@ -302,8 +305,8 @@ html {
       max-height: 60px;
   }  
   .row .h {
-    min-height: 20px;
-    max-height: 20px;
+    min-height: 35px;
+    max-height: 35px;
   }
 
 
@@ -319,6 +322,10 @@ html {
   }
   .cap, h2 {
     font-size: 16px;
+  }
+  .row .h {
+    min-height: 30px;
+    max-height: 30px;
   }
 }
 
