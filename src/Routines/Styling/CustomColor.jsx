@@ -1,5 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import GlobalState from "../../components/GlobalState";
+
 
 import "./routine.css";
 
@@ -8,6 +9,8 @@ const CustomColor = () => {
 
   const handleColorChange = (event) => {
     const name = event.target.name;
+    const value = event.target.value;
+    localStorage.setItem('color', value);
     setcolor(() => {
       return { [name]: event.target.value };
     });
@@ -15,6 +18,8 @@ const CustomColor = () => {
 
   const handlebgChange = (event) => {
     const name = event.target.name;
+    const value = event.target.value;
+    localStorage.setItem('bg', value);
     setbg(() => {
       return { [name]: event.target.value };
     });

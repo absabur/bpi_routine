@@ -153,6 +153,7 @@ html {
 }
 .p2 p, .p3 p, .h p{
   font-size: 1.75vw;
+  line-height: 2.2vw;
 }
 .p1 {
   max-width: 12.5%;

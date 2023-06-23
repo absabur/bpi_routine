@@ -12,6 +12,12 @@ import ShowRoutine from "./components/ShowRoutine";
 import Footer from "./components/Footer";
 import logo from './images/logo.jpg'
 
+let refreshColor = localStorage.getItem("color");
+let refreshBgColor = localStorage.getItem("bg");
+
+
+
+
 function App() {
   const [first, setfirst] = useState(true);
   const [second, setsecond] = useState(false);
@@ -22,8 +28,10 @@ function App() {
   const [rotate, setrotate] = useState({ transform: "" });
 
   
-  const [color, setcolor] = useState({color:'aqua'})
-  const [bg, setbg] = useState({backgroundColor:'black'})
+  const [color, setcolor] = useState({color: refreshColor})
+  const [bg, setbg] = useState({backgroundColor: refreshBgColor})
+  
+
 
   return (
     <>
