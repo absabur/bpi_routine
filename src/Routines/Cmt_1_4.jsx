@@ -15,9 +15,10 @@ const Cmt_1_4 = () => {
       <CustomColor />
       <Rotate />
       
-      <div className="cap">
-        <p>{routineHead}</p>
+      <div style={bg} className="cap">
+        <p style={color}>{routineHead}</p>
       </div>
+      
       <div className="table" style={rotate}>
 
         <Period />
