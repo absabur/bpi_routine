@@ -11,6 +11,7 @@ const Group = () => {
   };
   return (
     <>
+      <div className="space"></div>
       <div className="nav_display">
         <button onClick={() => handleGroup("Group A","a")}>
           <h3>Group A</h3>
@@ -22,6 +23,7 @@ const Group = () => {
           <h3>Group C</h3>
         </button>
       </div>
+      <div className="space"></div>
     </>
   );
 };

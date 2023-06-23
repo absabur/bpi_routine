@@ -31,6 +31,10 @@ img {
   margin: 1rem;
   border-radius: 50%;
 }
+.space {
+  width: 100%;
+  height: 12rem;
+}
 .nav_display {
   display: flex;
   align-items: center;
@@ -96,6 +100,7 @@ img {
   cursor: pointer;
   transition: all 0.3s ease-in;
   margin: 0.2rem;
+  margin-bottom: 1rem;
 }
 .f-icon{
   font-size: 35px;

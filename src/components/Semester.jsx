@@ -17,6 +17,7 @@ const Semester = () => {
     }
   return (
     <>
+      <div className="space"></div>
       <div className='nav_display'>
             <button onClick={() => handleSemester("2nd Semester","2nd")}><h3>2nd Semester</h3></button>
       
@@ -24,6 +25,7 @@ const Semester = () => {
     
             <button onClick={() => handleSemester("6th Semester","6th")}><h3>6th Semester</h3></button>
       </div>
+      <div className="space"></div>
     </>
   )
 }

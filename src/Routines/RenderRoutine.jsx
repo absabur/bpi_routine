@@ -35,7 +35,13 @@ const RenderRoutine = () => {
         }else if (routinePath == "et2nd2ndc") {
           return <Cmt_2_6 />
         }else{
-          return <h6 style={{textAlign: "center", fontSize: "24px", fontWeight: "600"}}>Routine can not find. <br />({routineHead})<br /> is not exists.</h6>
+          return (
+            <div>
+              <div className='space'></div>
+              <h6 style={{padding: "1rem", textAlign: "center", fontSize: "24px", fontWeight: "600"}}>Routine can not find. <br />({routineHead})<br /> is not exists.</h6>
+              <div className='space'></div>
+            </div>
+          )
         }
       }
   return (
