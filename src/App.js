@@ -50,7 +50,7 @@ function App() {
               <h1>Class Routine</h1>
             </div>
           </div>
-          <h4 className="warning">Refresh the page to back previous page.</h4>
+          <h4 className="warning">Refresh the page to select Technology.</h4>
           <button style={{background: "transparent", border: 'none', borderRadius: "4rem"}} onClick={()=> window.location.reload(true)}><GrRefresh className="r-icon" /></button>
         </div>
         

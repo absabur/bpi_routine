@@ -1,11 +1,4 @@
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Kalam', cursive;
-}
-
-
 .cap1 {
   display: flex;
   align-items: center;
@@ -40,7 +33,6 @@ img {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  font-family: 'Kalam', cursive;
 }
 .nav_display button {
   margin: 1rem 0;
