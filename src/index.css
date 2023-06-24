@@ -65,6 +65,7 @@ img {
 
 .gradient__text {
   color: #e1ff00;
+  margin-top: 1rem;
   /* background: -webkit-linear-gradient(#ddff00, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
