@@ -51,7 +51,7 @@ function App() {
             </div>
           </div>
           <h4 className="warning">Refresh the page to select Technology.</h4>
-          <button style={{background: "transparent", border: 'none', borderRadius: "4rem"}} onClick={()=> window.location.reload(true)}><GrRefresh className="r-icon" /></button>
+          <button style={{background: "transparent", border: 'none', borderRadius: "4rem"}} onClick={()=> window.location.reload()}><GrRefresh className="r-icon" /></button>
         </div>
         
         
