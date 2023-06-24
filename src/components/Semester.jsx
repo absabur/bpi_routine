@@ -17,7 +17,9 @@ const Semester = () => {
     }
   return (
     <>
+    
       <div className="space"></div>
+      <h1 className="head">Select Semester</h1>
       <div className='nav_display'>
             <button onClick={() => handleSemester("2nd Semester","2nd")}><h3>2nd Semester</h3></button>
       

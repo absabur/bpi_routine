@@ -12,6 +12,8 @@ const Shift_selection = () => {
   return (
     <>
       <div className="space"></div>
+      
+      <h1 className="head">Select Shift</h1>
       <div className="nav_display">
         <button onClick={() => handleShift("First Shift","1st")}>
           <h3>First Shift</h3>

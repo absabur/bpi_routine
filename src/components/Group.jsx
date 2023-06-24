@@ -12,6 +12,7 @@ const Group = () => {
   return (
     <>
       <div className="space"></div>
+      <h1 className="head">Select Group</h1>
       <div className="nav_display">
         <button onClick={() => handleGroup("Group A","a")}>
           <h3>Group A</h3>
