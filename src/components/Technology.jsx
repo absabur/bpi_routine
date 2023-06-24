@@ -20,8 +20,8 @@ const Technology = () => {
   return (
     <>
     
-    <h1 className="head">Select Your Technology</h1>
       <div className="nav_display">
+      <h1 className="head">Select Your Technology</h1>
         <button onClick={() => handleSub("Computer Science and Technology" ,"cst")}>
           <h3>Computer Science and Technology</h3>
         </button>
