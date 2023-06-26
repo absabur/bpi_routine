@@ -1,35 +1,27 @@
-import React, { useContext } from 'react'
-import GlobalState from './GlobalState'
-import Footer from './Footer'
+import React from "react";
 
-const Semester = () => {
+import { Link } from "react-router-dom";
 
-    const {third, setthird, fourth, setfourth, routinePath, setroutinePath, routineHead, setroutineHead, isGroup, showGroup, setshowGroup} = useContext(GlobalState)
-    const handleSemester = (e,semester) => {
-        setthird(!third)
-        if (isGroup === true) {
-          setshowGroup(!showGroup)
-        }else {
-          setfourth(!fourth)
-        }
-        setroutinePath(routinePath+semester)
-        setroutineHead(routineHead+e +", ")
-    }
+const Semester = ({ shift }) => {
+  localStorage.setItem("shift", shift);
   return (
     <>
-    
       <div className="space"></div>
-      <div className='nav_display'>
-      <h1 className="head">Select Semester</h1>
-            <button onClick={() => handleSemester("2nd Semester","2nd")}><h3>2nd Semester</h3></button>
-      
-            <button onClick={() => handleSemester("4th Semester","4th")}><h3>4th Semester</h3></button>
-    
-            <button onClick={() => handleSemester("6th Semester","6th")}><h3>6th Semester</h3></button>
+      <div className="nav_display">
+        <h1 className="head">Select Semester</h1>
+        <Link to="/2nd-semester">
+          <h3>2nd Semester</h3>
+        </Link>
+        <Link to="/4th-semester">
+          <h3>4th Semester</h3>
+        </Link>
+        <Link to="/6th-semester">
+          <h3>6th Semester</h3>
+        </Link>
       </div>
       <div className="space"></div>
     </>
-  )
-}
+  );
+};
 
-export default Semester
+export default Semester;

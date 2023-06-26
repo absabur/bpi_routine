@@ -7,7 +7,21 @@ import Period from "./CommonPartTable/Period";
 import TimeDuration from "./CommonPartTable/TimeDuration";
 
 const Cst_1_6 = () => {
-  const { color, bg, rotate, routineHead } = useContext(GlobalState);
+    
+    let tech = localStorage.getItem("tech")
+    let shift = localStorage.getItem("shift")
+    let sem = localStorage.getItem("sem")
+    let grp = localStorage.getItem("group")
+    
+    
+    let routineHead = <>
+        Depertment: {tech} <br />
+        Shift: {shift} <br />
+        Semester: {sem} <br />
+        {grp ? <p>Group: {grp}</p> : ''}
+    </>
+
+    const { color, bg, rotate } = useContext(GlobalState);
 
   return (
     <div className="main">

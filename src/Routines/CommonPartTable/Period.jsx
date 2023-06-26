@@ -3,8 +3,9 @@ import { useContext } from 'react';
 import GlobalState from '../../components/GlobalState';
 
 const Period = () => {
-    
-  const { color, bg } = useContext(GlobalState);
+
+    const { color, bg, rotate } = useContext(GlobalState);
+
   return (
     <div className="row">
       <div className="p1 h" style={bg}>

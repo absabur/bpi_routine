@@ -4,7 +4,9 @@ import GlobalState from '../../components/GlobalState';
 
 const TimeDuration = () => {
     
-  const { color, bg } = useContext(GlobalState);
+
+    const { color, bg, rotate } = useContext(GlobalState);
+
   return (
 
     <div className="row">

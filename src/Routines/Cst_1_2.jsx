@@ -5,9 +5,24 @@ import { GiTireIronCross } from "react-icons/gi";
 import Rotate from "./Styling/Rotate";
 import Period from "./CommonPartTable/Period";
 import TimeDuration from "./CommonPartTable/TimeDuration";
+import { Route } from "react-router-dom";
 
 const Cst_1_2 = () => {
-  const { color, bg, rotate, routineHead } = useContext(GlobalState);
+    
+    let tech = localStorage.getItem("tech")
+    let shift = localStorage.getItem("shift")
+    let sem = localStorage.getItem("sem")
+    let grp = localStorage.getItem("group")
+    
+    
+    let routineHead = <>
+        Depertment: {tech} <br />
+        Shift: {shift} <br />
+        Semester: {sem} <br />
+        {grp ? <>Group: {grp}</> : ''}
+    </>
+
+    const { color, bg, rotate } = useContext(GlobalState);
 
   return (
     <div className="main">

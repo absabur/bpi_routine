@@ -1,28 +1,37 @@
-import React, { useContext } from "react";
-import GlobalState from "./GlobalState";
+import React from "react";
 
-const Group = () => {
-  const { setsecond, second, third, setthird, routinePath, setroutinePath,routineHead, setroutineHead, fourth, setfourth, setshowGroup, showGroup } = useContext(GlobalState);
-  const handleGroup = (e, shift) => {
-    setfourth(!fourth)
-    setshowGroup(!showGroup)
-    setroutinePath(routinePath+shift)
-    setroutineHead(routineHead+e)
-  };
+import { Link } from "react-router-dom";
+
+const Group = ({ semester }) => {
+  localStorage.setItem("sem", semester);
   return (
     <>
       <div className="space"></div>
       <div className="nav_display">
-      <h1 className="head">Select Group</h1>
-        <button onClick={() => handleGroup("Group A","a")}>
+        <h1 className="head">Select Group</h1>
+        <b
+          style={{
+            width: "100%",
+            textAlign: "center",
+            color: "rgb(69, 0, 55)",
+            fontSize: "1.4rem",
+            padding: "1rem",
+          }}
+        >
+          Select 'No Group', If you don't have a group.
+        </b>
+        <Link to="/no-group">
+          <h3>No Group</h3>
+        </Link>
+        <Link to="/group-a">
           <h3>Group A</h3>
-        </button>
-        <button onClick={() => handleGroup("Group B","b")}>
+        </Link>
+        <Link to="/group-b">
           <h3>Group B</h3>
-        </button>
-        <button onClick={() => handleGroup("Group C","c")}>
+        </Link>
+        <Link to="/group-c">
           <h3>Group C</h3>
-        </button>
+        </Link>
       </div>
       <div className="space"></div>
     </>

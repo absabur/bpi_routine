@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 .cap1 {
   display: flex;
@@ -14,7 +14,6 @@
   padding: 1rem;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 2rem;
 }
 .cap1 .image {
   width: 100%;
@@ -32,13 +31,12 @@ img {
 .head {
   text-align: center;
   font-size: 30px;
+  width: 100%;
   padding: 1rem;
-  box-shadow: 0 0 20px black;
   display: inline-block;
   margin: 0 auto;
-  border-radius: 10px;
   margin-bottom: 2rem;
-  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
 }
 /* .space {
   width: 100%;
@@ -50,9 +48,16 @@ img {
   flex-direction: column;
   width: 100%;
 }
-.nav_display button {
+
+.nav_display a {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+.nav_display h3 {
   margin: 1rem 0;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   padding: 1rem 0.5rem;
   transition: all 0.4s ease;
   border: 1px solid black;
@@ -61,8 +66,9 @@ img {
   background-color: rgb(187, 255, 232);
   cursor: pointer;
   font-size: 20px;
+  color: black;
 }
-.nav_display button:hover {
+.nav_display h3:hover {
   box-shadow: 0 0 15px black;
   background-color: bisque;
 }
@@ -112,7 +118,7 @@ img {
   margin: 0.2rem;
   margin-bottom: 1rem;
 }
-.f-icon{
+.f-icon {
   font-size: 35px;
   border-radius: 50%;
   color: #1e47a0;
@@ -124,7 +130,7 @@ img {
   margin: 0.2rem;
   margin-right: 1rem;
 }
-.g-icon {  
+.g-icon {
   font-size: 35px;
   color: #a01e1e;
   background-color: white;
@@ -136,18 +142,22 @@ img {
   border-radius: 5px;
 }
 
-.f-icon:hover, .r-icon:hover, .g-icon:hover {
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+.f-icon:hover,
+.r-icon:hover,
+.g-icon:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 25px;
   }
+  .nav_display a {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 778px) {
-
   .nav_display button {
     width: 80%;
     font-size: 15px;
@@ -161,6 +171,7 @@ img {
   .cap1 {
     padding: 0.3rem;
   }
+
   .gradient__text {
     font-size: 18px;
     flex-direction: column;
@@ -179,8 +190,11 @@ img {
   .f-icon {
     font-size: 30px;
   }
-  .warning{
+  .warning {
     font-size: 15px;
+  }
+  .nav_display a {
+    width: 80%;
   }
 }
 
