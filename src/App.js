@@ -88,8 +88,7 @@ function App() {
               element={<Shift_selection technology="Tourism and Hospitality" />}
             />
 
-            <Route path="/1st-shift" element={<Semester shift="1st" />} />
-            <Route path="/2nd-shift" element={<Semester shift="2nd" />} />
+
 
             <Route
               path="/2nd-semester"

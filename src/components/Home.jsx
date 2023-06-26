@@ -5,18 +5,19 @@ import { ImHome } from "react-icons/im";
 
 const Home = () => {
   return (
-    <div className="nav_display" style={{ marginBottom: "1rem" }}>
+    <div className="" style={{ marginBottom: "1rem" }}>
       <Link
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          padding:"1rem",
+          backgroundColor:"lightgreen",
+          borderRadius:"10px"
         }}
         to="/"
       >
-        <h3 style={{ backgroundColor: "white", width: "4rem" }}>
-          <ImHome />
-        </h3>
+        <ImHome style={{ height:"35px", width:"35px"}} />
       </Link>
     </div>
   );
