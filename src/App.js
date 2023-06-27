@@ -4,16 +4,16 @@ import { FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Technology from "./components/Technology";
 import GlobalState from "./components/GlobalState";
-import ShiftSelection from "./components/Shift_selection";
-import Semester from "./components/Semester";
 import Footer from "./components/Footer";
 import logo from "./images/logo.jpg";
-import Group from "./components/Group";
-import RenderRoutine from "./Routines/RenderRoutine";
 import Home from "./components/Home";
+import Technology from "./components/Technology";
+import ShiftSelection from "./components/Shift_selection";
 import Error from "./components/Error";
+import Group from "./components/Group";
+import Semester from "./components/Semester";
+import RenderRoutine from "./Routines/RenderRoutine";
 
 let refreshColor = localStorage.getItem("color");
 let refreshBgColor = localStorage.getItem("bg");
