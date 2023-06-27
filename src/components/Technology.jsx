@@ -7,7 +7,7 @@ const Technology = () => {
     <>
       <div className="nav_display">
         <h1 className="head">Select Your Technology</h1>
-        <Link to="/cst">
+        <Link to="cst">
           <h3>Computer Science and Technology</h3>
         </Link>
         <Link to="/et">
