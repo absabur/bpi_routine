@@ -4,19 +4,19 @@ import "./Styling/routine.css";
 import { BsArrowDownShort } from "react-icons/bs";
 
 
-import Cst_1_2 from "./Cst_1_2";
-import Cst_1_4 from "./Cst_1_4";
-import Cst_1_6 from "./Cst_1_6";
-import Cst_2_2 from "./Cst_2_2";
-import Cst_2_4 from "./Cst_2_4";
-import Cst_2_6 from "./Cst_2_6";
+import Cst12 from "./Cst_1_2";
+import Cst14 from "./Cst_1_4";
+import Cst16 from "./Cst_1_6";
+import Cst22 from "./Cst_2_2";
+import Cst24 from "./Cst_2_4";
+import Cst26 from "./Cst_2_6";
 
-import Cmt_1_2 from "./Cmt_1_2";
-import Cmt_1_4 from "./Cmt_1_4";
-import Cmt_1_6 from "./Cmt_1_6";
-import Cmt_2_2 from "./Cmt_2_2";
-import Cmt_2_4 from "./Cmt_2_4";
-import Cmt_2_6 from "./Cmt_2_6";
+import Cmt12 from "./Cmt_1_2";
+import Cmt14 from "./Cmt_1_4";
+import Cmt16 from "./Cmt_1_6";
+import Cmt22 from "./Cmt_2_2";
+import Cmt24 from "./Cmt_2_4";
+import Cmt26 from "./Cmt_2_6";
 
 
 const RenderRoutine = ({ group }) => {
@@ -34,89 +34,89 @@ const RenderRoutine = ({ group }) => {
   </>
   const renderRoutine = () => {
     if (
-      tech == "Computer Science and Technology" &&
-      shift == "1st" &&
-      sem == "2nd" &&
-      grp == "A"
+      tech === "Computer Science and Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === "A"
     ) {
-      return <Cst_1_2 />;
+      return <Cst12 />;
     } else if (
-      tech == "Computer Science and Technology" &&
-      shift == "1st" &&
-      sem == "4th" &&
-      grp == "A"
+      tech === "Computer Science and Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === "A"
     ) {
-      return <Cst_1_4 />;
+      return <Cst14 />;
     } else if (
-      tech == "Computer Science and Technology" &&
-      shift == "1st" &&
-      sem == "6th" &&
-      grp == "A"
+      tech === "Computer Science and Technology" &&
+      shift === "1st" &&
+      sem === "6th" &&
+      grp === "A"
     ) {
-      return <Cst_1_6 />;
+      return <Cst16 />;
     } else if (
-      tech == "Computer Science and Technology" &&
-      shift == "2nd" &&
-      sem == "2nd" &&
-      grp == "A"
+      tech === "Computer Science and Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === "A"
     ) {
-      return <Cst_2_2 />;
+      return <Cst22 />;
     } else if (
-      tech == "Computer Science and Technology" &&
-      shift == "2nd" &&
-      sem == "4th" &&
-      grp == "A"
+      tech === "Computer Science and Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === "A"
     ) {
-      return <Cst_2_4 />;
+      return <Cst24 />;
     } else if (
-      tech == "Computer Science and Technology" &&
-      shift == "2nd" &&
-      sem == "6th" &&
-      grp == "A"
+      tech === "Computer Science and Technology" &&
+      shift === "2nd" &&
+      sem === "6th" &&
+      grp === "A"
     ) {
-      return <Cst_2_6 />;
+      return <Cst26 />;
     } else if (
-      tech == "Computer Technology" &&
-      shift == "1st" &&
-      sem == "2nd" &&
-      grp == ""
+      tech === "Computer Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === ""
     ) {
-      return <Cmt_1_2 />;
+      return <Cmt12 />;
     } else if (
-      tech == "Computer Technology" &&
-      shift == "1st" &&
-      sem == "4th" &&
-      grp == ""
+      tech === "Computer Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === ""
     ) {
-      return <Cmt_1_4 />;
+      return <Cmt14 />;
     } else if (
-      tech == "Computer Technology" &&
-      shift == "1st" &&
-      sem == "6th" &&
-      grp == ""
+      tech === "Computer Technology" &&
+      shift === "1st" &&
+      sem === "6th" &&
+      grp === ""
     ) {
-      return <Cmt_1_6 />;
+      return <Cmt16 />;
     } else if (
-      tech == "Computer Technology" &&
-      shift == "2nd" &&
-      sem == "2nd" &&
-      grp == ""
+      tech === "Computer Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === ""
     ) {
-      return <Cmt_2_2 />;
+      return <Cmt22 />;
     } else if (
-      tech == "Computer Technology" &&
-      shift == "2nd" &&
-      sem == "4th" &&
-      grp == ""
+      tech === "Computer Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === ""
     ) {
-      return <Cmt_2_4 />;
+      return <Cmt24 />;
     } else if (
-      tech == "Computer Technology" &&
-      shift == "2nd" &&
-      sem == "6th" &&
-      grp == ""
+      tech === "Computer Technology" &&
+      shift === "2nd" &&
+      sem === "6th" &&
+      grp === ""
     ) {
-      return <Cmt_2_6 />;
+      return <Cmt26 />;
     } else {
       return (
         <div>

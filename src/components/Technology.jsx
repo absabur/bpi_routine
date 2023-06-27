@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
 
 const Technology = () => {
@@ -8,37 +8,38 @@ const Technology = () => {
     <>
       <div className="nav_display">
         <h1 className="head"><BsArrowDownShort />Select Your Technology<BsArrowDownShort /></h1>
-        <Link to="/cst">
+        <Link to="cst">
           <h3>Computer Science and Technology</h3>
         </Link>
-        <Link to="/et">
+        <Link to="et">
           <h3>Electrical Technology</h3>
         </Link>
-        <Link to="/cmt">
+        <Link to="cmt">
           <h3>Computer Technology</h3>
         </Link>
-        <Link to="/ct">
+        <Link to="ct">
           <h3>Civil Technology</h3>
         </Link>
-        <Link to="/mt">
+        <Link to="mt">
           <h3>Mechanical Technology</h3>
         </Link>
-        <Link to="/pt">
+        <Link to="pt">
           <h3>Power Technology</h3>
         </Link>
-        <Link to="/rac">
+        <Link to="rac">
           <h3>Refrigeration & Air Conditioning Technology</h3>
         </Link>
-        <Link to="/ent">
+        <Link to="ent">
           <h3>Electronics Technology</h3>
         </Link>
-        <Link to="/mnt">
+        <Link to="mnt">
           <h3>Mining Technology</h3>
         </Link>
-        <Link to="/th">
+        <Link to="th">
           <h3>Tourism and Hospitality</h3>
         </Link>
       </div>
+      <Outlet />
     </>
   );
 };
