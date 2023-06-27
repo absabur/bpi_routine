@@ -8,7 +8,7 @@ const Group = ({ semester }) => {
   return (
     <>
       <div className="space"></div>
-      <div className="nav_display">
+      <div className="nav_dis">
         <h1 className="head"><BsArrowDownShort />Select Group<BsArrowDownShort /></h1>
         <b
           style={{
@@ -17,6 +17,7 @@ const Group = ({ semester }) => {
             color: "rgb(69, 0, 55)",
             fontSize: "1.4rem",
             padding: "1rem",
+            marginTop:"-1rem"
           }}
         >
           Select 'No Group', If you don't have a group.

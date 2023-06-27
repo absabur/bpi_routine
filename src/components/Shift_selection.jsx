@@ -8,7 +8,7 @@ const Shift_selection = ({technology}) => {
     <>
       <div className="space"></div>
       
-      <div className="nav_display">
+      <div className="nav_dis">
       <h1 className="head"><BsArrowDownShort />Select Shift<BsArrowDownShort /></h1>
         <Link to="1st-shift"><h3>First Shift</h3></Link>
         <Link to="2nd-shift"><h3>Second Shift</h3></Link>

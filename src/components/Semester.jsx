@@ -8,7 +8,7 @@ const Semester = ({ shift }) => {
   return (
     <>
       <div className="space"></div>
-      <div className="nav_display">
+      <div className="nav_dis">
         <h1 className="head"><BsArrowDownShort />Select Semester<BsArrowDownShort /></h1>
         <Link to="2nd-semester">
           <h3>2nd Semester</h3>
