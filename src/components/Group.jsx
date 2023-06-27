@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
 
 const Group = ({ semester }) => {
@@ -21,20 +21,19 @@ const Group = ({ semester }) => {
         >
           Select 'No Group', If you don't have a group.
         </b>
-        <Link to="no-group">
+        <Link to="/no-group">
           <h3>No Group</h3>
         </Link>
-        <Link to="group-a">
+        <Link to="/group-a">
           <h3>Group A</h3>
         </Link>
-        <Link to="group-b">
+        <Link to="/group-b">
           <h3>Group B</h3>
         </Link>
-        <Link to="group-c">
+        <Link to="/group-c">
           <h3>Group C</h3>
         </Link>
       </div>
-      <Outlet />
       <div className="space"></div>
     </>
   );

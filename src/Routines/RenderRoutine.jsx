@@ -26,6 +26,12 @@ const RenderRoutine = ({ group }) => {
   let sem = localStorage.getItem("sem");
   let grp = localStorage.getItem("group");
 
+  let routineHead = <>
+    Depertment: {tech},
+    Shift: {shift},
+    Semester: {sem},
+    {grp ? <>Group: {grp}</> : ''}
+  </>
   const renderRoutine = () => {
     if (
       tech == "Computer Science and Technology" &&
@@ -124,7 +130,7 @@ const RenderRoutine = ({ group }) => {
             }}
           >
             Routine can not find. <br />
-            Your selected routine is not exists.
+            ({routineHead})<br />routine is not exists.
           </h6>
           <div className="space"></div>
         </div>

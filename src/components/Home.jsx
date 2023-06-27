@@ -12,12 +12,12 @@ const Home = () => {
           alignItems: "center",
           justifyContent: "center",
           padding:"1rem",
-          backgroundColor:"lightgreen",
+          backgroundColor:"white",
           borderRadius:"10px"
         }}
         to="/"
       >
-        <ImHome style={{ height:"35px", width:"35px"}} />
+        <ImHome style={{ height:"35px", width:"35px", color:"#598ac2"}} />
       </Link>
     </div>
   );

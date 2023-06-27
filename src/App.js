@@ -44,468 +44,70 @@ function App() {
             <Route path="/" element={<Technology />} />
 
             <Route
-              path="cst"
+              path="/cst"
               element={
                 <Shift_selection technology="Computer Science and Technology" />
               }
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="cmt"
+              path="/cmt"
               element={<Shift_selection technology="Computer Technology" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="ct"
+              path="/ct"
               element={<Shift_selection technology="Civil Technology" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="et"
+              path="/et"
               element={<Shift_selection technology="Electrical Technology" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="ent"
+              path="/ent"
               element={<Shift_selection technology="Electronics Technology" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="mt"
+              path="/mt"
               element={<Shift_selection technology="Mechanical Technology" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="pt"
+              path="/pt"
               element={<Shift_selection technology="Power Technology" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="rac"
+              path="/rac"
               element={
                 <Shift_selection technology="Refrigeration & Air Conditioning Technology" />
               }
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="mnt"
+              path="/mnt"
               element={<Shift_selection technology="Mining Technology" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
 
             <Route
-              path="th"
+              path="/th"
               element={<Shift_selection technology="Tourism and Hospitality" />}
-            >
-              <Route path="1st-shift" element={<Semester shift="1st" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-              <Route path="2nd-shift" element={<Semester shift="2nd" />}>
-                <Route path="2nd-semester" element={<Group semester="2nd" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="4th-semester" element={<Group semester="4th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-                <Route path="6th-semester" element={<Group semester="6th" />}>
-                  <Route path="no-group" element={<RenderRoutine group="" />} />
-                  <Route path="group-a" element={<RenderRoutine group="A" />} />
-                  <Route path="group-b" element={<RenderRoutine group="B" />} />
-                  <Route path="group-c" element={<RenderRoutine group="C" />} />
-                </Route>
-              </Route>
-            </Route>
+            />
+
+            <Route path="/2nd-semester" element={<Group semester="2nd" />} />
+            <Route path="/4th-semester" element={<Group semester="4th" />} />
+            <Route path="/6th-semester" element={<Group semester="6th" />} />
+
+            <Route path="/1st-shift" element={<Semester shift="1st" />} />
+            <Route path="/2nd-shift" element={<Semester shift="2nd" />} />
+            
+            <Route path="/no-group" element={<RenderRoutine group="" />} />
+            <Route path="/group-a" element={<RenderRoutine group="A" />} />
+            <Route path="/group-b" element={<RenderRoutine group="B" />} />
+            <Route path="/group-c" element={<RenderRoutine group="C" />} />
 
             <Route path="*" element={<Error />} />
           </Routes>
