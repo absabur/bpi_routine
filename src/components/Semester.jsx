@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Link, Outlet } from "react-router-dom";
+import { BsArrowDownShort } from "react-icons/bs";
 
 const Semester = ({ shift }) => {
   localStorage.setItem("shift", shift);
@@ -8,7 +9,7 @@ const Semester = ({ shift }) => {
     <>
       <div className="space"></div>
       <div className="nav_display">
-        <h1 className="head">Select Semester</h1>
+        <h1 className="head"><BsArrowDownShort />Select Semester<BsArrowDownShort /></h1>
         <Link to="2nd-semester">
           <h3>2nd Semester</h3>
         </Link>

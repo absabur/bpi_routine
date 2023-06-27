@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import { BsArrowDownShort } from "react-icons/bs";
 
 const Shift_selection = ({technology}) => {
   localStorage.setItem('tech',technology)
@@ -8,7 +9,7 @@ const Shift_selection = ({technology}) => {
       <div className="space"></div>
       
       <div className="nav_display">
-      <h1 className="head">Select Shift</h1>
+      <h1 className="head"><BsArrowDownShort />Select Shift<BsArrowDownShort /></h1>
         <Link to="1st-shift"><h3>First Shift</h3></Link>
         <Link to="2nd-shift"><h3>Second Shift</h3></Link>
       </div>

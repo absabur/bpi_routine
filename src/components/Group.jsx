@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Link, Outlet } from "react-router-dom";
+import { BsArrowDownShort } from "react-icons/bs";
 
 const Group = ({ semester }) => {
   localStorage.setItem("sem", semester);
@@ -8,7 +9,7 @@ const Group = ({ semester }) => {
     <>
       <div className="space"></div>
       <div className="nav_display">
-        <h1 className="head">Select Group</h1>
+        <h1 className="head"><BsArrowDownShort />Select Group<BsArrowDownShort /></h1>
         <b
           style={{
             width: "100%",

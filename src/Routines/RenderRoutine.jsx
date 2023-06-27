@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Styling/routine.css";
+import { BsArrowDownShort } from "react-icons/bs";
 
 
 import Cst_1_2 from "./Cst_1_2";
@@ -130,7 +131,12 @@ const RenderRoutine = ({ group }) => {
       );
     }
   };
-  return <div>{renderRoutine()}</div>;
+  return (
+    <>
+      <h1 style={{marginBottom:"0.1rem"}} className="head"><BsArrowDownShort />Your Routine<BsArrowDownShort /></h1>
+      <div>{renderRoutine()}</div>
+    </>
+  );
 };
 
 export default RenderRoutine;

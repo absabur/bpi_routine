@@ -1,12 +1,13 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { BsArrowDownShort } from "react-icons/bs";
 
 const Technology = () => {
   return (
     <>
       <div className="nav_display">
-        <h1 className="head">Select Your Technology</h1>
+        <h1 className="head"><BsArrowDownShort />Select Your Technology<BsArrowDownShort /></h1>
         <Link to="cst">
           <h3>Computer Science and Technology</h3>
         </Link>
