@@ -18,9 +18,18 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
+  "start_url": "/",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "description": "This is a class routine for Bogra Polytechnic institute. Here You can get all routine of existing technology, semester , shift and group."
+  "description": "This is a class routine for Bogra Polytechnic institute. Here You can get all routine of existing technology, semester , shift and group.",
+  "dir": "auto",
+  "scope": "https://bpi-routine.vercel.app/",
+  "lang": "en",
+  "orientation": "any",
+  "display_override": [
+    "browser",
+    "fullscreen",
+    "window-controls-overlay"
+  ]
 }
