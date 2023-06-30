@@ -1,6 +1,6 @@
 {
-  "short_name": "Routine App",
-  "name": "BPI Routine App",
+  "short_name": "Class Routine",
+  "name": "BPI Class Routine",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "This is a class routine for Bogra Polytechnic institute. Here You can get all routine of existing technology, semester , shift and group."
 }
