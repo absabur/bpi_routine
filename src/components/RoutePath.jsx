@@ -11,6 +11,8 @@ import Error from "./Error";
 import Group from "./Group";
 import Semester from "./Semester";
 import RenderRoutine from "../Routines/RenderRoutine";
+import LodadedRoutine from './LodadedRoutine';
+import SavedRoutine from './SavedRoutine'
 
 const RoutePath = () => {
   return (
@@ -25,9 +27,11 @@ const RoutePath = () => {
               </div>
             </div>
             <Home />
+            <LodadedRoutine />
           </div>
           <Routes>
             <Route path="/" element={<Technology />} />
+            <Route path="/loaded-routine" element={<SavedRoutine />} />
 
             <Route
               path="cst"

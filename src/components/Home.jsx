@@ -5,19 +5,20 @@ import { ImHome } from "react-icons/im";
 
 const Home = () => {
   return (
-    <div className="" style={{ marginBottom: "1rem" }}>
+    <div style={{ marginBottom: "1rem" }}>
       <Link
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           padding:"1rem",
-          backgroundColor:"white",
-          borderRadius:"10px"
+          backgroundColor:"black",
+          borderRadius:"10px",
+          boxShadow: "0 0 20px white"
         }}
         to="/"
       >
-        <ImHome style={{ height:"35px", width:"35px", color:"#598ac2"}} />
+        <ImHome style={{ height:"35px", width:"35px", color:"rgb(0, 255, 106)"}} />
       </Link>
     </div>
   );
