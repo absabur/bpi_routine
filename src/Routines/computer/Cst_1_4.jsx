@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import CustomColor from "./Styling/CustomColor";
-import GlobalState from "../components/GlobalState";
+import CustomColor from "../Styling/CustomColor";
+import GlobalState from "../../components/GlobalState";
 import { GiTireIronCross } from "react-icons/gi";
-import Rotate from "./Styling/Rotate";
-import Period from "./CommonPartTable/Period";
-import TimeDuration from "./CommonPartTable/TimeDuration";
+import Rotate from "../Styling/Rotate";
+import Period from "../CommonPartTable/Period";
+import TimeDuration from "../CommonPartTable/TimeDuration";
 
 const Cst_1_4 = () => {
     

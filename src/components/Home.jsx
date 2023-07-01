@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ImHome } from "react-icons/im";
 
 const Home = () => {
+
   return (
     <div style={{ marginBottom: "1rem" }}>
       <Link

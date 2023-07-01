@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import CustomColor from "./Styling/CustomColor";
-import GlobalState from "../components/GlobalState";
+import CustomColor from "../Styling/CustomColor";
+import GlobalState from "../../components/GlobalState";
 import { GiTireIronCross } from "react-icons/gi";
-import Rotate from "./Styling/Rotate";
-import Period from "./CommonPartTable/Period";
-import TimeDuration from "./CommonPartTable/TimeDuration";
+import Rotate from "../Styling/Rotate";
+import Period from "../CommonPartTable/Period";
+import TimeDuration from "../CommonPartTable/TimeDuration";
 
-const Cmt_2_4 = () => {
+const Cst_2_2 = () => {
     
     let tech = localStorage.getItem("tech")
     let shift = localStorage.getItem("shift")
@@ -32,7 +32,7 @@ const Cmt_2_4 = () => {
       <div style={bg} className="cap">
         <p style={color}>{routineHead}</p>
       </div>
-      
+
       <div className="table" style={rotate}>
 
         <Period />
@@ -154,4 +154,5 @@ const Cmt_2_4 = () => {
   );
 };
 
-export default Cmt_2_4
+
+export default Cst_2_2
