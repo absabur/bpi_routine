@@ -46,6 +46,49 @@ import Ct22b from "../Routines/civil/Ct_2_2b";
 import Ct24b from "../Routines/civil/Ct_2_4b";
 import Ct26b from "../Routines/civil/Ct_2_6b";
 
+import Et12a from "../Routines/et/Et_1_2a";
+import Et14a from "../Routines/et/Et_1_4a";
+import Et16a from "../Routines/et/Et_1_6a";
+import Et22a from "../Routines/et/Et_2_2a";
+import Et24a from "../Routines/et/Et_2_4a";
+import Et26a from "../Routines/et/Et_2_6a";
+
+import Et12b from "../Routines/et/Et_1_2b";
+import Et14b from "../Routines/et/Et_1_4b";
+import Et16b from "../Routines/et/Et_1_6b";
+import Et22b from "../Routines/et/Et_2_2b";
+import Et24b from "../Routines/et/Et_2_4b";
+import Et26b from "../Routines/et/Et_2_6b";
+
+import Et12c from "../Routines/et/Et_1_2c";
+import Et14c from "../Routines/et/Et_1_4c";
+import Et22c from "../Routines/et/Et_2_2c";
+import Et24c from "../Routines/et/Et_2_4c";
+
+
+import Mt12a from "../Routines/mt/Mt_1_2a";
+import Mt14a from "../Routines/mt/Mt_1_4a";
+import Mt16a from "../Routines/mt/Mt_1_6a";
+import Mt22a from "../Routines/mt/Mt_2_2a";
+import Mt24a from "../Routines/mt/Mt_2_4a";
+import Mt26a from "../Routines/mt/Mt_2_6a";
+
+import Mt12b from "../Routines/mt/Mt_1_2b";
+import Mt14b from "../Routines/mt/Mt_1_4b";
+import Mt16b from "../Routines/mt/Mt_1_6b";
+import Mt22b from "../Routines/mt/Mt_2_2b";
+import Mt24b from "../Routines/mt/Mt_2_4b";
+import Mt26b from "../Routines/mt/Mt_2_6b";
+
+import Mt12c from "../Routines/mt/Mt_1_2c";
+import Mt14c from "../Routines/mt/Mt_1_4c";
+import Mt22c from "../Routines/mt/Mt_2_2c";
+import Mt24c from "../Routines/mt/Mt_2_4c";
+
+
+import Mnt16 from "../Routines/mining/Mnt_1_6";
+import Mnt26 from "../Routines/mining/Mnt_2_6";
+
 const SavedRoutine = () => {
   let tech = localStorage.getItem("tech");
   let shift = localStorage.getItem("shift");
@@ -301,8 +344,261 @@ const SavedRoutine = () => {
     ) {
       return <Ct26b />;
     } 
+
+
+
+    else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === "A"
+    ) {
+      return <Et12a />;
+    }  else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === "A"
+    ) {
+      return <Et14a />;
+    } else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "6th" &&
+      grp === "A"
+    ) {
+      return <Et16a />;
+    } else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === "A"
+    ) {
+      return <Et22a />;
+    }  else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === "A"
+    ) {
+      return <Et24a />;
+    } else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "6th" &&
+      grp === "A"
+    ) {
+      return <Et26a />;
+    } 
+
+
+    else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === "B"
+    ) {
+      return <Et12b />;
+    }  else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === "B"
+    ) {
+      return <Et14b />;
+    } else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "6th" &&
+      grp === "B"
+    ) {
+      return <Et16b />;
+    } else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === "B"
+    ) {
+      return <Et22b />;
+    }  else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === "B"
+    ) {
+      return <Et24b />;
+    } else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "6th" &&
+      grp === "B"
+    ) {
+      return <Et26b />;
+    } 
+
+    else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === "C"
+    ) {
+      return <Et12c />;
+    }  else if (
+      tech === "Electrical Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === "C"
+    ) {
+      return <Et14c />;
+    } else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === "C"
+    ) {
+      return <Et22c />;
+    }  else if (
+      tech === "Electrical Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === "C"
+    ) {
+      return <Et24c />;
+    }
+
     
+    else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === "A"
+    ) {
+      return <Mt12a />;
+    }  else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === "A"
+    ) {
+      return <Mt14a />;
+    } else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "6th" &&
+      grp === "A"
+    ) {
+      return <Mt16a />;
+    } else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === "A"
+    ) {
+      return <Mt22a />;
+    }  else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === "A"
+    ) {
+      return <Mt24a />;
+    } else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "6th" &&
+      grp === "A"
+    ) {
+      return <Mt26a />;
+    } 
+
+
+    else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === "B"
+    ) {
+      return <Mt12b />;
+    }  else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === "B"
+    ) {
+      return <Mt14b />;
+    } else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "6th" &&
+      grp === "B"
+    ) {
+      return <Mt16b />;
+    } else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === "B"
+    ) {
+      return <Mt22b />;
+    }  else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === "B"
+    ) {
+      return <Mt24b />;
+    } else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "6th" &&
+      grp === "B"
+    ) {
+      return <Mt26b />;
+    } 
+
+    else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "2nd" &&
+      grp === "C"
+    ) {
+      return <Mt12c />;
+    }  else if (
+      tech === "Mechanical Technology" &&
+      shift === "1st" &&
+      sem === "4th" &&
+      grp === "C"
+    ) {
+      return <Mt14c />;
+    } else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "2nd" &&
+      grp === "C"
+    ) {
+      return <Mt22c />;
+    }  else if (
+      tech === "Mechanical Technology" &&
+      shift === "2nd" &&
+      sem === "4th" &&
+      grp === "C"
+    ) {
+      return <Mt24c />;
+    }
     
+    else if (
+      tech === "Mining Technology" &&
+      shift === "1st" &&
+      sem === "6th"
+    ) {
+      return <Mnt16 />;
+    } else if (
+      tech === "Mining Technology" &&
+      shift === "2nd" &&
+      sem === "6th"
+    ) {
+      return <Mnt26 />;
+    } 
     
     else {
       return (
@@ -316,7 +612,7 @@ const SavedRoutine = () => {
               fontWeight: "600",
             }}
           >
-            Routine is not saved. visit manually to save.
+            Routine is not saved. Visit manually to save.
           </h6>
           <div className="space"></div>
         </div>

@@ -450,7 +450,7 @@ const RoutePath = () => {
           </Route>
         </Route>
 
-        <Route
+        {/* <Route
           path="th"
           element={<ShiftSelection technology="Tourism and Hospitality" />}
         >
@@ -494,7 +494,7 @@ const RoutePath = () => {
               <Route path="group-c" element={<RenderRoutine group="C" />} />
             </Route>
           </Route>
-        </Route>
+        </Route> */}
 
         <Route path="*" element={<Error />} />
       </Routes>

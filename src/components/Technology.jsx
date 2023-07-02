@@ -35,9 +35,9 @@ const Technology = () => {
         <Link to="mnt">
           <h3>Mining Technology</h3>
         </Link>
-        <Link to="th">
+        {/* <Link to="th">
           <h3>Tourism and Hospitality</h3>
-        </Link>
+        </Link> */}
       </div>
       <Outlet />
     </>
