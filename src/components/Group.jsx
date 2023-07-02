@@ -6,7 +6,9 @@ import { BsArrowDownShort } from "react-icons/bs";
 
 
 const Group = ({ semester }) => {
-
+  const scroll = () => {
+    window.scrollTo(0,document.body.scrollHeight)
+  }
   
   localStorage.setItem("sem", semester);
   let tech = localStorage.getItem("tech")
@@ -19,13 +21,13 @@ const Group = ({ semester }) => {
         <div className="nav_dis">
           <h1 className="head"><BsArrowDownShort />Select Group<BsArrowDownShort /></h1>
   
-            <Link to="group-a">
+            <Link onClick={scroll} to="group-a">
               <h3>Group A</h3>
             </Link>
-            <Link to="group-b">
+            <Link onClick={scroll} to="group-b">
               <h3>Group B</h3>
             </Link>
-            <Link to="group-c">
+            <Link onClick={scroll} to="group-c">
               <h3>Group C</h3>
             </Link>
           
@@ -41,10 +43,10 @@ const Group = ({ semester }) => {
         <div className="nav_dis">
           <h1 className="head"><BsArrowDownShort />Select Group<BsArrowDownShort /></h1>
  
-            <Link to="group-a">
+            <Link onClick={scroll} to="group-a">
               <h3>Group A</h3>
             </Link>
-            <Link to="group-b">
+            <Link onClick={scroll} to="group-b">
               <h3>Group B</h3>
             </Link>
           
@@ -60,7 +62,7 @@ const Group = ({ semester }) => {
         <div className="nav_dis">
           <h1 className="head"><BsArrowDownShort />Select Group<BsArrowDownShort /></h1>
         
-          <Link to="routine">
+          <Link onClick={scroll} to="routine">
             <h3>Get Routine</h3>
           </Link>
           
