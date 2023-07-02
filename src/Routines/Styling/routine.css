@@ -46,6 +46,7 @@ html {
 
 .colorInput input {
   cursor: pointer;
+  box-shadow: 0 0 10px black;
 }
 
 .color-sec {
@@ -56,6 +57,7 @@ html {
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   margin-bottom: 2rem;
+  padding: 0.5rem;
 }
 .color-sec h2 {
   margin: 0.5rem;
