@@ -14,10 +14,8 @@ const Ent_2_6 = () => {
 
   let routineHead = (
     <>
-      Depertment: {tech} <br />
-      Shift: {shift} <br />
-      Semester: {sem} <br />
-      {grp ? <p>Group: {grp}</p> : ""}
+      Depertment: {tech},<br /> {shift} Shift, {sem} Semester
+      {grp ? <>, Group {grp}</> : null}
     </>
   );
 

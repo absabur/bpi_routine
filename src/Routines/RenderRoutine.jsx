@@ -65,7 +65,6 @@ import Et14c from "./et/Et_1_4c";
 import Et22c from "./et/Et_2_2c";
 import Et24c from "./et/Et_2_4c";
 
-
 import Mt12a from "./mt/Mt_1_2a";
 import Mt14a from "./mt/Mt_1_4a";
 import Mt16a from "./mt/Mt_1_6a";
@@ -87,8 +86,25 @@ import Mt24c from "./mt/Mt_2_4c";
 
 import Mnt16 from "./mining/Mnt_1_6";
 import Mnt26 from "./mining/Mnt_2_6";
+import { Link } from "react-router-dom";
+// import html2canvas from "html2canvas";
+// import jsPDF from "jspdf";
 
 const RenderRoutine = ({ group }) => {
+  // const downloadRoutine = () => {
+  //   const element = document.getElementById('routine');
+  //   if (!element) {
+  //     return;
+  //   }
+  //   html2canvas(element).then((canvas)=>{
+  //     let image = canvas.toDataURL("img/png");
+  //     const doc = new jsPDF("p", "mm", "a4")
+  //     const width = doc.internal.pageSize.getWidth();
+  //     const height = doc.internal.pageSize.getHeight();
+  //     doc.addImage(image, 'PNG', 0, 0, width, height)
+  //     doc.save('routine.pdf')
+  //   })
+  // }
   localStorage.setItem("group", group);
   let tech = localStorage.getItem("tech");
   let shift = localStorage.getItem("shift");
@@ -97,8 +113,8 @@ const RenderRoutine = ({ group }) => {
 
   let routineHead = (
     <>
-      Depertment: {tech}, Shift: {shift}, Semester: {sem},
-      {grp ? <>Group: {grp}</> : ""}
+      Depertment: {tech},<br /> {shift} Shift, {sem} Semester
+      {grp ? <>, Group {grp}</> : null}
     </>
   );
   const renderRoutine = () => {
@@ -138,17 +154,13 @@ const RenderRoutine = ({ group }) => {
       sem === "6th"
     ) {
       return <Cmt26 />;
-    } 
-        
-        
-    
-    else if (
+    } else if (
       tech === "Power Technology" &&
       shift === "1st" &&
       sem === "2nd"
     ) {
       return <Pt12 />;
-    }  else if (
+    } else if (
       tech === "Power Technology" &&
       shift === "1st" &&
       sem === "4th"
@@ -166,7 +178,7 @@ const RenderRoutine = ({ group }) => {
       sem === "2nd"
     ) {
       return <Pt22 />;
-    }  else if (
+    } else if (
       tech === "Power Technology" &&
       shift === "2nd" &&
       sem === "4th"
@@ -178,17 +190,13 @@ const RenderRoutine = ({ group }) => {
       sem === "6th"
     ) {
       return <Pt26 />;
-    } 
-
-
-
-    else if (
+    } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "1st" &&
       sem === "2nd"
     ) {
       return <Rac12 />;
-    }  else if (
+    } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "1st" &&
       sem === "4th"
@@ -206,7 +214,7 @@ const RenderRoutine = ({ group }) => {
       sem === "2nd"
     ) {
       return <Rac22 />;
-    }  else if (
+    } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "2nd" &&
       sem === "4th"
@@ -218,17 +226,13 @@ const RenderRoutine = ({ group }) => {
       sem === "6th"
     ) {
       return <Rac26 />;
-    } 
-    
-
-
-    else if (
+    } else if (
       tech === "Electronics Technology" &&
       shift === "1st" &&
       sem === "2nd"
     ) {
       return <Ent12 />;
-    }  else if (
+    } else if (
       tech === "Electronics Technology" &&
       shift === "1st" &&
       sem === "4th"
@@ -246,7 +250,7 @@ const RenderRoutine = ({ group }) => {
       sem === "2nd"
     ) {
       return <Ent22 />;
-    }  else if (
+    } else if (
       tech === "Electronics Technology" &&
       shift === "2nd" &&
       sem === "4th"
@@ -258,17 +262,14 @@ const RenderRoutine = ({ group }) => {
       sem === "6th"
     ) {
       return <Ent26 />;
-    } 
-
-
-    else if (
+    } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "A"
     ) {
       return <Ct12a />;
-    }  else if (
+    } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -289,7 +290,7 @@ const RenderRoutine = ({ group }) => {
       grp === "A"
     ) {
       return <Ct22a />;
-    }  else if (
+    } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
@@ -303,17 +304,14 @@ const RenderRoutine = ({ group }) => {
       grp === "A"
     ) {
       return <Ct26a />;
-    } 
-
-
-    else if (
+    } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "B"
     ) {
       return <Ct12b />;
-    }  else if (
+    } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -334,7 +332,7 @@ const RenderRoutine = ({ group }) => {
       grp === "B"
     ) {
       return <Ct22b />;
-    }  else if (
+    } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
@@ -348,18 +346,14 @@ const RenderRoutine = ({ group }) => {
       grp === "B"
     ) {
       return <Ct26b />;
-    } 
-
-
-
-    else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "A"
     ) {
       return <Et12a />;
-    }  else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -380,7 +374,7 @@ const RenderRoutine = ({ group }) => {
       grp === "A"
     ) {
       return <Et22a />;
-    }  else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
@@ -394,17 +388,14 @@ const RenderRoutine = ({ group }) => {
       grp === "A"
     ) {
       return <Et26a />;
-    } 
-
-
-    else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "B"
     ) {
       return <Et12b />;
-    }  else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -425,7 +416,7 @@ const RenderRoutine = ({ group }) => {
       grp === "B"
     ) {
       return <Et22b />;
-    }  else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
@@ -439,16 +430,14 @@ const RenderRoutine = ({ group }) => {
       grp === "B"
     ) {
       return <Et26b />;
-    } 
-
-    else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "C"
     ) {
       return <Et12c />;
-    }  else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -462,24 +451,21 @@ const RenderRoutine = ({ group }) => {
       grp === "C"
     ) {
       return <Et22c />;
-    }  else if (
+    } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
       grp === "C"
     ) {
       return <Et24c />;
-    }
-
-    
-    else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "A"
     ) {
       return <Mt12a />;
-    }  else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -500,7 +486,7 @@ const RenderRoutine = ({ group }) => {
       grp === "A"
     ) {
       return <Mt22a />;
-    }  else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
@@ -514,17 +500,14 @@ const RenderRoutine = ({ group }) => {
       grp === "A"
     ) {
       return <Mt26a />;
-    } 
-
-
-    else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "B"
     ) {
       return <Mt12b />;
-    }  else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -545,7 +528,7 @@ const RenderRoutine = ({ group }) => {
       grp === "B"
     ) {
       return <Mt22b />;
-    }  else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
@@ -559,16 +542,14 @@ const RenderRoutine = ({ group }) => {
       grp === "B"
     ) {
       return <Mt26b />;
-    } 
-
-    else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
       sem === "2nd" &&
       grp === "C"
     ) {
       return <Mt12c />;
-    }  else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
       sem === "4th" &&
@@ -582,17 +563,14 @@ const RenderRoutine = ({ group }) => {
       grp === "C"
     ) {
       return <Mt22c />;
-    }  else if (
+    } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
       sem === "4th" &&
       grp === "C"
     ) {
       return <Mt24c />;
-    }
-
-
-    else if (
+    } else if (
       tech === "Mining Technology" &&
       shift === "1st" &&
       sem === "6th"
@@ -604,10 +582,7 @@ const RenderRoutine = ({ group }) => {
       sem === "6th"
     ) {
       return <Mnt26 />;
-    } 
-    
-    
-    else {
+    } else {
       return (
         <div>
           <div className="space"></div>
@@ -634,7 +609,13 @@ const RenderRoutine = ({ group }) => {
         Your Routine
         <BsArrowDownShort />
       </h1>
-      <div>{renderRoutine()}</div>
+      <div id="routine">{renderRoutine()}</div>
+      {/* <button onClick={downloadRoutine}>Screenshot</button> */}
+      <div style={{width:"100%", textAlign:"center", margin:"2rem 0"}}>
+      <Link className='saveRoutine' to="/loaded-routine">
+            Open Routine in single page.
+      </Link>
+      </div>
     </>
   );
 };

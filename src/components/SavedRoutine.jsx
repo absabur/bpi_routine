@@ -612,7 +612,7 @@ const SavedRoutine = () => {
               fontWeight: "600",
             }}
           >
-            Routine is not saved. Visit manually to save.
+            Can,t find or routine is not saved. Visit manually to save.
           </h6>
           <div className="space"></div>
         </div>
