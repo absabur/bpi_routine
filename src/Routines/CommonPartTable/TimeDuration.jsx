@@ -5,7 +5,7 @@ import GlobalState from '../../components/GlobalState';
 const TimeDuration = () => {
     
 
-    const { color, bg, rotate } = useContext(GlobalState);
+    const { color, bg } = useContext(GlobalState);
 
   return (
 

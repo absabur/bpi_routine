@@ -4,7 +4,7 @@ import GlobalState from '../../components/GlobalState';
 
 const Period = () => {
 
-    const { color, bg, rotate } = useContext(GlobalState);
+    const { color, bg } = useContext(GlobalState);
 
   return (
     <div className="row">
