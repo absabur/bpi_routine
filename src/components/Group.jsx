@@ -7,9 +7,10 @@ import { BsArrowDownShort } from "react-icons/bs";
 
 const Group = ({ semester }) => {
   const scroll = () => {
-    window.scrollTo(0,document.body.scrollHeight)
+    setTimeout(() => {
+      window.scrollTo(0,document.body.scrollHeight-850)
+    }, 100);
   }
-  
   localStorage.setItem("sem", semester);
   let tech = localStorage.getItem("tech")
   let sem = localStorage.getItem("sem")

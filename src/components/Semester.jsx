@@ -5,7 +5,9 @@ import { BsArrowDownShort } from "react-icons/bs";
 
 const Semester = ({ shift }) => {
   const scroll = () => {
-    window.scrollTo(0,document.body.scrollHeight)
+    setTimeout(() => {
+      window.scrollTo(0,document.body.scrollHeight)
+    }, 100);
   }
   localStorage.setItem("shift", shift);
   let tech = localStorage.getItem('tech')

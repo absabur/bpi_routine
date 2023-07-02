@@ -5,7 +5,9 @@ import { BsArrowDownShort } from "react-icons/bs";
 const Shift_selection = ({technology}) => {
   localStorage.setItem('tech',technology)
   const scroll = () => {
-    window.scrollTo(0,document.body.scrollHeight)
+    setTimeout(() => {
+      window.scrollTo(0,document.body.scrollHeight)
+    }, 100);
   }
   return (
     <>
