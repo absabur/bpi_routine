@@ -7,7 +7,7 @@ const Shift_selection = ({technology}) => {
   const scroll = () => {
     setTimeout(() => {
       window.scrollTo(0,document.body.scrollHeight)
-    }, 100);
+    }, 10);
   }
   return (
     <>

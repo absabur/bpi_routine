@@ -9,7 +9,7 @@ const Group = ({ semester }) => {
   const scroll = () => {
     setTimeout(() => {
       window.scrollTo(0,document.body.scrollHeight-850)
-    }, 100);
+    }, 10);
   }
   localStorage.setItem("sem", semester);
   let tech = localStorage.getItem("tech")

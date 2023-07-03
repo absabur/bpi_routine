@@ -7,7 +7,7 @@ const Semester = ({ shift }) => {
   const scroll = () => {
     setTimeout(() => {
       window.scrollTo(0,document.body.scrollHeight)
-    }, 100);
+    }, 10);
   }
   localStorage.setItem("shift", shift);
   let tech = localStorage.getItem('tech')

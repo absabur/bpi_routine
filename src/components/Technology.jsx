@@ -2,39 +2,73 @@ import React from "react";
 
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
+import Search from "./Search";
+import { useState } from "react";
+
+
+
+const technology = [
+  {
+    nam : 'Computer Science and Technology',
+    to :'cst'
+  },
+  {
+    nam : 'Electrical Technology',
+    to : 'et'
+  },
+  {
+    nam : 'Computer Technology',
+    to : 'cmt'
+  },
+  {
+    nam : 'Civil Technology',
+    to : 'ct'
+  },
+  {
+    nam : 'Mechanical Technology',
+    to : 'mt'
+  },
+  {
+    nam : 'Power Technology',
+    to : 'pt'
+  },
+  {
+    nam : 'Refrigeration & Air Conditioning Technology',
+    to : 'rac'
+  },
+  {
+    nam : 'Electronics Technology',
+    to : 'ent'
+  },
+  {
+    nam : 'Mining Technology',
+    to : 'mnt'
+  }
+]
 
 const Technology = () => {
+  const [filterTechArray, setfilterTechArray] = useState(technology)
+
+  const handleSearch = (searchValue) => {
+    let value = searchValue.toLowerCase();
+    const newTech = technology && technology.filter((tech)=>{
+      const techName = tech.nam.toLowerCase();
+      return techName.startsWith(value)
+    })
+    setfilterTechArray(newTech);
+  }
   return (
     <>
       <div className="nav_display">
         <h1 className="head"><BsArrowDownShort />Select Your Technology<BsArrowDownShort /></h1>
-        <Link to="cst">
-          <h3>Computer Science and Technology</h3>
-        </Link>
-        <Link to="et">
-          <h3>Electrical Technology</h3>
-        </Link>
-        <Link to="cmt">
-          <h3>Computer Technology</h3>
-        </Link>
-        <Link to="ct">
-          <h3>Civil Technology</h3>
-        </Link>
-        <Link to="mt">
-          <h3>Mechanical Technology</h3>
-        </Link>
-        <Link to="pt">
-          <h3>Power Technology</h3>
-        </Link>
-        <Link to="rac">
-          <h3>Refrigeration & Air Conditioning Technology</h3>
-        </Link>
-        <Link to="ent">
-          <h3>Electronics Technology</h3>
-        </Link>
-        <Link to="mnt">
-          <h3>Mining Technology</h3>
-        </Link>
+        <Search onSearch={handleSearch}/>
+        {filterTechArray.map((tech)=>(
+            <>
+              <Link to={tech.to}>
+                <h3>{tech.nam}</h3>
+              </Link>
+            </>
+          ))}
         {/* <Link to="th">
           <h3>Tourism and Hospitality</h3>
         </Link> */}
