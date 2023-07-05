@@ -609,7 +609,7 @@ const RenderRoutine = ({ group }) => {
         Your Routine
         <BsArrowDownShort />
       </h1>
-      <div id="routine">{renderRoutine()}</div>
+      <div>{renderRoutine()}</div>
       {/* <button onClick={downloadRoutine}>Screenshot</button> */}
       <div style={{width:"100%", textAlign:"center", margin:"2rem 0"}}>
       <Link className='saveRoutine' to="/loaded-routine">

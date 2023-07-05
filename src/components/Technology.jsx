@@ -64,7 +64,7 @@ const Technology = () => {
         <Search onSearch={handleSearch}/>
         {filterTechArray.map((tech)=>(
             <>
-              <Link to={tech.to}>
+              <Link to={tech.to} key={tech.to}>
                 <h3>{tech.nam}</h3>
               </Link>
             </>

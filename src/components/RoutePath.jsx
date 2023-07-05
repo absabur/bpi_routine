@@ -12,6 +12,7 @@ import Semester from "./Semester";
 import RenderRoutine from "../Routines/RenderRoutine";
 import LodadedRoutine from "./LodadedRoutine";
 import SavedRoutine from "./SavedRoutine";
+import Time from "./Time";
 
 const RoutePath = () => {
   return (
@@ -28,6 +29,7 @@ const RoutePath = () => {
         <Home />
         <LodadedRoutine />
       </div>
+      <Time />
       <Routes>
         <Route path="/" element={<Technology />} />
         <Route path="/loaded-routine" element={<SavedRoutine />} />

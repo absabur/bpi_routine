@@ -90,6 +90,7 @@ import Mnt16 from "../Routines/mining/Mnt_1_6";
 import Mnt26 from "../Routines/mining/Mnt_2_6";
 
 const SavedRoutine = () => {
+
   let tech = localStorage.getItem("tech");
   let shift = localStorage.getItem("shift");
   let sem = localStorage.getItem("sem");
