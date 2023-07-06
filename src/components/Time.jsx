@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 function Time() {
-  const [time, setTime] = useState('');
-  const [day, setDay] = useState('');
+  const [time, setTime] = useState('Loading time...');
+  const [day, setDay] = useState('Loading date...');
+
 
   
   useEffect(() => {
@@ -63,8 +64,8 @@ function Time() {
 
   return (
     <div className='time-sec'>
-        <p>{time}</p>
-        <p>{day}</p>
+        <p style={{marginBottom:"0.5rem"}}>Time: {time}</p>
+        <p>Date: {day}</p>
     </div>
   );
 }

@@ -180,6 +180,11 @@ html {
   width: 100%;
 }
 
+.active-color {
+  border: 2px solid greenyellow;
+  outline: none;
+}
+
 .footer {
   margin-top: 0;
   width: 100%;

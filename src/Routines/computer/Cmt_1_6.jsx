@@ -20,6 +20,8 @@ const Cmt_1_6 = () => {
 
   const { color, bg, rotate } = useContext(GlobalState);
 
+
+
   return (
     <div className="main">
       <CustomColor />
