@@ -11,8 +11,8 @@ import Group from "./Group";
 import Semester from "./Semester";
 import RenderRoutine from "../Routines/RenderRoutine";
 import LodadedRoutine from "./LodadedRoutine";
-import SavedRoutine from "./SavedRoutine";
 import Time from "./Time";
+import SavedRoutine from "./SavedRoutine";
 
 const RoutePath = () => {
   return (

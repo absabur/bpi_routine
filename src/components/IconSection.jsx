@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FaFacebook } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import { BiEnvelope } from "react-icons/bi";
 
 const IconSection = () => {
   return (
@@ -17,7 +17,7 @@ const IconSection = () => {
               <FaFacebook className="f-icon" />
             </a>
             <a href="mailto:absabur929@gmail.com" target="blank">
-              <SiGmail className="g-icon" />
+              <BiEnvelope className="g-icon" />
             </a>
           </div>
         </div>
