@@ -1,3 +1,5 @@
+import { GiTireIronCross } from "react-icons/gi";
+
 const routineData = [
   [
     {
@@ -18,8 +20,8 @@ const routineData = [
       room: 'SUNDAY'
     },{
       p: 'p2',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: <GiTireIronCross />,
+      room: ''
     },
   ],
   [
