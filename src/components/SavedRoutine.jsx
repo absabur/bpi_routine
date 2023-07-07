@@ -87,6 +87,8 @@ import Mt24c from "../Routines/mt/mt_2_4c";
 import Mnt16 from "../Routines/mining/mnt_1_6"
 import Mnt26 from "../Routines/mining/mnt_2_6";
 
+import notFind from '../Routines/notFind'
+
 import Routine from "./Routine";
 
 const SavedRoutine = () => {
@@ -565,22 +567,7 @@ const SavedRoutine = () => {
     }
     
     else {
-      return (
-        <div>
-          <div className="space"></div>
-          <h6
-            style={{
-              padding: "1rem",
-              textAlign: "center",
-              fontSize: "24px",
-              fontWeight: "600",
-            }}
-          >
-            Can,t find or routine is not saved. Visit manually to save.
-          </h6>
-          <div className="space"></div>
-        </div>
-      );
+      return notFind
     }
   };
   return (

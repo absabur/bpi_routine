@@ -34,7 +34,7 @@ let tech = localStorage.getItem("tech");
         <TimeDuration />
         {
             routineData && routineData.map((row)=>(
-                <div className='row'>
+                <div key={row.id} className='row'>
                     {row && row.map((sub)=>(
                         <div className={`p ${sub.p}`} style={bg}>
                             <p style={color}>

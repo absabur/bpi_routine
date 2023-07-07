@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 function Time() {
-  const [time, setTime] = useState('Loading time...');
-  const [day, setDay] = useState('Loading date...');
+  const [time, setTime] = useState('Loading...');
+  const [day, setDay] = useState('Loading...');
 
 
   

@@ -87,6 +87,8 @@ import Mt24c from "./mt/mt_2_4c";
 import Mnt16 from "./mining/mnt_1_6"
 import Mnt26 from "./mining/mnt_2_6";
 
+import notFind from './notFind'
+
 import { Link } from "react-router-dom";
 import Routine from "../components/Routine";
 
@@ -98,12 +100,6 @@ const RenderRoutine = ({ group }) => {
   let sem = localStorage.getItem("sem");
   let grp = localStorage.getItem("group");
 
-  let routineHead = (
-    <>
-      Depertment: {tech},<br /> {shift} Shift, {sem} Semester
-      {grp ? <>, Group {grp}</> : null}
-    </>
-  );
   const renderRoutine = () => {
     if (
       tech === "Computer Science and Technology" &&
@@ -569,24 +565,10 @@ const RenderRoutine = ({ group }) => {
       sem === "6th"
     ) {
       return Mnt26;
-    } else {
-      return (
-        <div>
-          <div className="space"></div>
-          <h6
-            style={{
-              padding: "1rem",
-              textAlign: "center",
-              fontSize: "24px",
-              fontWeight: "600",
-            }}
-          >
-            Routine can not find. <br />({routineHead})<br />
-            Your selected routine is not exist.
-          </h6>
-          <div className="space"></div>
-        </div>
-      );
+    } 
+    
+    else {
+      return notFind
     }
   };
   return (

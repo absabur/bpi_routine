@@ -25,7 +25,7 @@ const routineData = [
   [
     {
       p: 'p1',
-      subject: 'SUNDAY',
+      subject: 'MONDAY',
       room: ''
     },{
       p: 'p3',
@@ -48,7 +48,7 @@ const routineData = [
   [
     {
       p: 'p1',
-      subject: 'SUNDAY',
+      subject: 'TUESDAY',
       room: ''
     },{
       p: 'p3',
@@ -71,7 +71,7 @@ const routineData = [
   [
     {
       p: 'p1',
-      subject: 'SUNDAY',
+      subject: 'WEDNESDAY',
       room: ''
     },{
       p: 'p3',
@@ -94,7 +94,7 @@ const routineData = [
   [
     {
       p: 'p1',
-      subject: 'SUNDAY',
+      subject: 'THURSDAY',
       room: ''
     },{
       p: 'p3',
