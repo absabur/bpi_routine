@@ -13,10 +13,6 @@ const technology = [
     to :'cst'
   },
   {
-    nam : 'Electrical Technology',
-    to : 'et'
-  },
-  {
     nam : 'Computer Technology',
     to : 'cmt'
   },
@@ -29,16 +25,20 @@ const technology = [
     to : 'mt'
   },
   {
+    nam : 'Electrical Technology',
+    to : 'et'
+  },
+  {
+    nam : 'Electronics Technology',
+    to : 'ent'
+  },
+  {
     nam : 'Power Technology',
     to : 'pt'
   },
   {
     nam : 'Refrigeration & Air Conditioning Technology',
     to : 'rac'
-  },
-  {
-    nam : 'Electronics Technology',
-    to : 'ent'
   },
   {
     nam : 'Mining Technology',
