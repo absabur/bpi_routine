@@ -61,7 +61,7 @@ const Group = ({ semester }) => {
       <>
         <div className="space"></div>
         <div className="nav_dis">
-          <h1 className="head"><BsArrowDownShort />Select Group<BsArrowDownShort /></h1>
+          <h1 className="head"><BsArrowDownShort />Click Here<BsArrowDownShort /></h1>
         
           <Link onClick={scroll} to="routine">
             <h3>Get Routine</h3>
