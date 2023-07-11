@@ -70,7 +70,7 @@ const Technology = () => {
         </h1>
         {filterTechArray.map((tech) => (
           <>
-            <Link to={tech.to} key={tech.to}>
+            <Link key={new Date().toString()} to={tech.to}>
               <h3>{tech.nam}</h3>
             </Link>
           </>

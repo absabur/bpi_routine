@@ -8,7 +8,7 @@ const routineData = [
       room: "",
     },
     {
-      p: "p1",
+      p: "p3",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -23,22 +23,7 @@ const routineData = [
       room: "SUNDAY",
     },
     {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
+      p: "p2",
       subject: <GiTireIronCross />,
       room: "",
     },
@@ -50,7 +35,7 @@ const routineData = [
       room: "",
     },
     {
-      p: "p1",
+      p: "p3",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -65,22 +50,7 @@ const routineData = [
       room: "SUNDAY",
     },
     {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
+      p: "p2",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -92,7 +62,7 @@ const routineData = [
       room: "",
     },
     {
-      p: "p1",
+      p: "p3",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -107,22 +77,7 @@ const routineData = [
       room: "SUNDAY",
     },
     {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
+      p: "p2",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -134,7 +89,7 @@ const routineData = [
       room: "",
     },
     {
-      p: "p1",
+      p: "p3",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -149,22 +104,7 @@ const routineData = [
       room: "SUNDAY",
     },
     {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
+      p: "p2",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -176,7 +116,7 @@ const routineData = [
       room: "",
     },
     {
-      p: "p1",
+      p: "p3",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
@@ -191,22 +131,7 @@ const routineData = [
       room: "SUNDAY",
     },
     {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
+      p: "p2",
       subject: "SUNDAY",
       room: "SUNDAY",
     },
