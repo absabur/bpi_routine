@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import logo from "../images/logo.png";
 import Home from "./Home";
@@ -10,7 +10,6 @@ import Error from "./Error";
 import Group from "./Group";
 import Semester from "./Semester";
 import RenderRoutine from "../Routines/RenderRoutine";
-import LodadedRoutine from "./LodadedRoutine";
 import Time from "./Time";
 import SavedRoutine from "./SavedRoutine";
 
@@ -26,8 +25,11 @@ const RoutePath = () => {
             <h1>Class Routine</h1>
           </div>
         </div>
-        <Home />
-        <LodadedRoutine />
+        <Home /><div style={{width:"100%", textAlign:"center", margin:"1rem 0"}}>
+          <Link className='saveRoutine' to="/loaded-routine">
+                Last visited routine.
+          </Link>
+        </div>
       </div>
       <Time />
       <Routes>

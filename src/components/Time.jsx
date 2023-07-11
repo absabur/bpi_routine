@@ -64,7 +64,7 @@ function Time() {
 
   return (
     <div className='time-sec'>
-        <p style={{marginBottom:"0.5rem"}}>Time: {time}</p>
+        <p style={{marginBottom:"0.2rem"}}>Time: {time}</p>
         <p>Date: {day}</p>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Styling/routine.css";
+import { BsArrowDownShort } from "react-icons/bs";
 
 import Cst12 from "./computer/cst_1_2";
 import Cst14 from "./computer/cst_1_4";
@@ -88,8 +89,8 @@ import Mnt26 from "./mining/mnt_2_6";
 
 import notFind from './notFind'
 
-import { Link } from "react-router-dom";
 import Routine from "../components/Routine";
+import { Link } from "react-router-dom";
 
 const RenderRoutine = ({ group }) => {
 
@@ -572,14 +573,21 @@ const RenderRoutine = ({ group }) => {
   };
   return (
     <>
+     <h1 className="head">
+        <div>
+          <BsArrowDownShort />
+          Your Routine
+          <BsArrowDownShort />
+        </div>
+      </h1>
+      
+      <div style={{width:"100%", textAlign:"center", margin:"1rem 0"}}>
+        <Link className='saveRoutine' to="/loaded-routine">
+              Open Routine in single page.
+        </Link>
+      </div>
       <div>
         <Routine routineData={renderRoutine()} />
-      </div>
-      {/* <button onClick={downloadRoutine}>Screenshot</button> */}
-      <div style={{width:"100%", textAlign:"center", margin:"2rem 0"}}>
-      <Link className='saveRoutine' to="/loaded-routine">
-            Open Routine in single page.
-      </Link>
       </div>
     </>
   );

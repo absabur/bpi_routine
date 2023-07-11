@@ -1,7 +1,6 @@
 import React from "react";
 
 import "../Routines/Styling/routine.css";
-import { BsArrowDownShort } from "react-icons/bs";
 
 import Cst12 from "../Routines/computer/cst_1_2";
 import Cst14 from "../Routines/computer/cst_1_4";
@@ -572,11 +571,6 @@ const SavedRoutine = () => {
   };
   return (
     <>
-      <h1 style={{ marginBottom: "0.1rem" }} className="head">
-        <BsArrowDownShort />
-        Your Routine
-        <BsArrowDownShort />
-      </h1>
       <div>
         <Routine routineData={renderRoutine()} />
       </div>

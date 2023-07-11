@@ -57,7 +57,6 @@ html {
   background-color: var(--white);
   box-shadow: 0 0 10px var(--black);
   margin: 0 auto;
-  margin-bottom: 2rem;
   padding: 0.5rem;
 }
 .color-sec h2 {
@@ -195,7 +194,7 @@ html {
   font-size: 1.2rem;
 }
 .footer span a {
-  color: var(--tcolor);
+  color: var(--white);
   padding: 10px;
 }
 

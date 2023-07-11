@@ -19,7 +19,7 @@ const Home = () => {
         }}
         to="/"
       >
-        <ImHome style={{ height:"35px", width:"35px", color:"rgb(66, 0, 61)"}} />
+        <ImHome style={{ height:"35px", width:"35px", color:"rgb(54, 0, 18)"}} />
       </Link>
     </div>
   );

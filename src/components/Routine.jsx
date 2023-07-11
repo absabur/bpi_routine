@@ -22,9 +22,7 @@ let tech = localStorage.getItem("tech");
   const { color, bg, rotate } = useContext(GlobalState);
   return (
     <div className="main">
-      <CustomColor />
       <Rotate />
-
       <div style={bg} className="cap">
         <p style={color}>{routineHead}</p>
       </div>
@@ -34,9 +32,9 @@ let tech = localStorage.getItem("tech");
         <TimeDuration />
         {
             routineData && routineData.map((row)=>(
-                <div key={row.id} className='row'>
+                <div key={new Date().toString()} className='row'>
                     {row && row.map((sub)=>(
-                        <div className={`p ${sub.p}`} style={bg}>
+                        <div key={new Date().toString()} className={`p ${sub.p}`} style={bg}>
                             <p style={color}>
                                 {sub.subject} <br />
                                 {sub.room}
@@ -48,6 +46,7 @@ let tech = localStorage.getItem("tech");
         }
         
       </div>
+      <CustomColor />
     </div>
   )
 }
