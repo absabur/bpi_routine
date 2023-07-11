@@ -5,7 +5,7 @@
   padding: 0;
 }
 html {
-  background-color: rgb(196, 178, 186);
+  background-color: rgb(243, 255, 220);
 }
 
 .cap {
@@ -21,8 +21,8 @@ html {
   transition: all 0.5s;
   font-size: 1.4rem;
   font-weight: 600;
-  box-shadow: 0 0 20px rgb(0, 0, 0);
-  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px var(--black);
+  background-color: var(--black);
   color: white;
 }
 .cap p{
@@ -46,7 +46,7 @@ html {
 
 .colorInput input {
   cursor: pointer;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px var(--black);
 }
 
 .color-sec {
@@ -54,7 +54,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
+  box-shadow: 0 0 10px var(--black);
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 0.5rem;
@@ -71,14 +72,15 @@ html {
   background-color: aqua;
   transition: all 0.4s;
   font-weight: bolder;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px var(--white);
   cursor: pointer;
 }
 .landscape {
   display: none;
   padding: 0.5rem;
-  background-color: greenyellow;
-  box-shadow: 0 0 5px rgb(0, 0, 0);
+  background-color: var(--white);
+  color: var(--tcolor);
+  box-shadow: 0 0 5px var(--black);
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
   outline: none;
@@ -87,12 +89,12 @@ html {
   margin: 1rem auto;
 }
 .landscape:hover {
-  box-shadow: 0 0 15px rgb(0, 0, 0);
-  background-color: tomato;
+  box-shadow: 0 0 15px var(--black);
+  background-color: var(--rgb(146, 248, 201));
 }
 
 .btn:hover {
-  background-color: tomato;
+  background-color: var(--rgb(146, 248, 201));
 }
 
 .table {
@@ -113,7 +115,7 @@ html {
   margin: 0.2rem 0;
 }
 .p {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--black);
   padding: 5px;
   margin: 0 0.31%;
   text-align: center;
@@ -124,12 +126,12 @@ html {
   min-height: 100px;
   max-height: 100px;
   overflow: auto;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px var(--black);
   outline: 0.1px solid red;
   transition: all 0.2s ease;
 }
 .row .h {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--black);
   padding: 5px;
   margin: 0 0.31%;
   text-align: center;
@@ -140,7 +142,7 @@ html {
   min-height: 50px;
   max-height: 50px;
   overflow: auto;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px var(--black);
   outline: 0.01px solid red;
   transition: all 0.5s ease;
 }
@@ -154,7 +156,7 @@ html {
   width: 100%;
   font-size: 1.35vw;
   font-weight: 700;
-  color: white;
+  color: var(--white);
   font-family: "Josefin Sans", sans-serif;
   margin: auto;
 }
@@ -180,10 +182,6 @@ html {
   width: 100%;
 }
 
-.active-color {
-  border: 2px solid greenyellow;
-  outline: none;
-}
 
 .footer {
   margin-top: 0;
@@ -192,12 +190,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: var(--gray);
+  color: var(--white);
   font-size: 1.2rem;
 }
 .footer span a {
-  color: rgb(217, 255, 0);
+  color: var(--tcolor);
   padding: 10px;
 }
 

@@ -6,18 +6,24 @@ import { BsArrowDownShort } from "react-icons/bs";
 const Semester = ({ shift }) => {
   const scroll = () => {
     setTimeout(() => {
-      window.scrollTo(0,document.body.scrollHeight)
+      window.scrollTo(0, document.body.scrollHeight);
     }, 10);
-  }
+  };
   localStorage.setItem("shift", shift);
-  let tech = localStorage.getItem('tech')
+  let tech = localStorage.getItem("tech");
 
   if (tech === "Computer Science and Technology") {
     return (
       <>
         <div className="space"></div>
-        <div className="nav_dis">
-          <h1 className="head"><BsArrowDownShort />Select Semester<BsArrowDownShort /></h1>
+        <div className="nav_display">
+          <h1 className="head">
+            <div>
+              <BsArrowDownShort />
+              Select Semester
+              <BsArrowDownShort />
+            </div>
+          </h1>
           <Link onClick={scroll} to="2nd-semester">
             <h3>2nd Semester</h3>
           </Link>
@@ -33,8 +39,14 @@ const Semester = ({ shift }) => {
     return (
       <>
         <div className="space"></div>
-        <div className="nav_dis">
-          <h1 className="head"><BsArrowDownShort />Select Semester<BsArrowDownShort /></h1>
+        <div className="nav_display">
+          <h1 className="head">
+            <div>
+            <BsArrowDownShort />
+            Select Semester
+            <BsArrowDownShort />
+            </div>
+          </h1>
           <Link onClick={scroll} to="6th-semester">
             <h3>6th Semester</h3>
           </Link>
@@ -47,8 +59,14 @@ const Semester = ({ shift }) => {
     return (
       <>
         <div className="space"></div>
-        <div className="nav_dis">
-          <h1 className="head"><BsArrowDownShort />Select Semester<BsArrowDownShort /></h1>
+        <div className="nav_display">
+          <h1 className="head">
+            <div>
+            <BsArrowDownShort />
+            Select Semester
+            <BsArrowDownShort />
+            </div>
+          </h1>
           <Link onClick={scroll} to="2nd-semester">
             <h3>2nd Semester</h3>
           </Link>
@@ -64,7 +82,6 @@ const Semester = ({ shift }) => {
       </>
     );
   }
-  
 };
 
 export default Semester;

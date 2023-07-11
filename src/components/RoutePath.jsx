@@ -2,7 +2,7 @@ import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import logo from "../images/logo.jpg";
+import logo from "../images/logo.png";
 import Home from "./Home";
 import Technology from "./Technology";
 import ShiftSelection from "./Shift_selection";
@@ -407,7 +407,7 @@ const RoutePath = () => {
         </Route>
 
         <Route
-          path="mnt"
+          path="mmst"
           element={<ShiftSelection technology="Mining Technology" />}
         >
           <Route path="1st-shift" element={<Semester shift="1st" />}>
