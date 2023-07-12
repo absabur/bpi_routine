@@ -19,7 +19,7 @@ let tech = localStorage.getItem("tech");
     </>
   );
 
-  const { color, bg, rotate } = useContext(GlobalState);
+  const { color, bg, rotate, } = useContext(GlobalState);
   return (
     <div className="main">
       <Rotate />
@@ -36,7 +36,7 @@ let tech = localStorage.getItem("tech");
                     {row && row.map((sub)=>(
                         <div className={`p ${sub.p}`} style={bg}>
                             <p style={color}>
-                                {sub.subject} <br />
+                                <>{sub.subject}</> <br />
                                 {sub.room}
                             </p>
                         </div>

@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <GlobalState.Provider
-        value={{ color, setcolor, bg, setbg, rotate, setrotate }}
+        value={{ color, setcolor, bg, setbg, rotate, setrotate, }}
       >
         <RoutePath />
 
