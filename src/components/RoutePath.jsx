@@ -19,9 +19,8 @@ const RoutePath = () => {
       <div className="cap1">
         <div className="image">
           <img src={logo} alt="logo" />
-          <div>
+          <div className="head-name">
             <h1>Bogra Polytechnic Institute.</h1>
-            <br />
             <h1>Class Routine</h1>
           </div>
         </div>
