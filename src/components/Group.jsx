@@ -3,6 +3,7 @@ import React from "react";
 
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
+import RenderRoutine from "../Routines/RenderRoutine";
 
 const Group = ({ semester }) => {
   const scroll = () => {
@@ -77,7 +78,8 @@ const Group = ({ semester }) => {
   } else {
     return (
       <>
-        <div className="space"></div>
+      <RenderRoutine group="" />
+        {/* <div className="space"></div>
         <div className="nav_display">
           <h1 className="head">
             <div>
@@ -92,7 +94,7 @@ const Group = ({ semester }) => {
           </Link>
         </div>
         <Outlet />
-        <div className="space"></div>
+        <div className="space"></div> */}
       </>
     );
   }

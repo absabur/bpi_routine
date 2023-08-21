@@ -73,7 +73,7 @@ const routineData = [
     },
     {
       p: "p3",
-      subject: "",
+      subject: "Computer Office Application",
       code: "28511",
       room: "1205",
     },
@@ -161,7 +161,7 @@ const routineData = [
     },
     {
       p: "p3",
-      subject: "",
+      subject: "Computer Office Application",
       code: "28511",
       room: "1205",
     },

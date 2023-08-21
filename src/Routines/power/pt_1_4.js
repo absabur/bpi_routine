@@ -16,7 +16,7 @@ const routineData = [
     },
     {
       p: "p1",
-      subject: "",
+      subject: "Progamming in C",
       code: "28567",
       room: "103",
     },
@@ -29,7 +29,7 @@ const routineData = [
 
     {
       p: "p1",
-      subject: "",
+      subject: "Suspention, Brake, Steering & Transmission System of",
       code: "26262",
       room: "103",
     },
@@ -82,7 +82,7 @@ const routineData = [
     },
     {
       p: "p3",
-      subject: "",
+      subject: "Suspention, Brake, Steering & Transmission System of",
       code: "26262",
       room: "103",
     },
@@ -126,14 +126,14 @@ const routineData = [
     },
     {
       p: "p1",
-      subject: "",
+      subject: "Suspention, Brake, Steering & Transmission System of",
       code: "26262",
       room: "1307",
     },
 
     {
       p: "p3",
-      subject: "",
+      subject: "Progamming in C",
       code: "28567",
       room: "1205",
     },
@@ -159,7 +159,7 @@ const routineData = [
     },
     {
       p: "p1",
-      subject: "",
+      subject: "Progamming in C",
       code: "28567",
       room: "1307",
     },
