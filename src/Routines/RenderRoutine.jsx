@@ -87,6 +87,9 @@ import Mt24c from "./mt/mt_2_4c";
 import Mnt16 from "./mining/mnt_1_6"
 import Mnt26 from "./mining/mnt_2_6";
 
+import Th16 from "./th/th_1_6"
+import Th26 from "./th/th_2_6";
+
 import notFind from './notFind'
 
 import Routine from "../components/Routine";
@@ -565,6 +568,18 @@ const RenderRoutine = ({ group }) => {
       sem === "6th"
     ) {
       return Mnt26;
+    }  else if (
+      tech === "Tourism and Hospitality" &&
+      shift === "1st" &&
+      sem === "6th"
+    ) {
+      return Th16;
+    } else if (
+      tech === "Tourism and Hospitality" &&
+      shift === "2nd" &&
+      sem === "6th"
+    ) {
+      return Th26;
     } 
     
     else {

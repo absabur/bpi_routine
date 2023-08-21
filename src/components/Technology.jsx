@@ -42,6 +42,10 @@ const technology = [
     nam: "Mining Technology",
     to: "mmst",
   },
+  {
+    nam: "Tourism and Hospitality",
+    to: "th",
+  },
 ];
 
 const Technology = () => {

@@ -131,7 +131,7 @@
 }
 
 html, button, input, select, textarea {
-    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-family: 'Montserrat', Helvetica, "Josefin Sans", sans-serif;
     color: #92a4ad;
 }
 h1 {

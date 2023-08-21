@@ -14,7 +14,7 @@ function App() {
   const [bg, setbg] = useState({ backgroundColor: refreshBgColor });
 
   return (
-    <>
+    <div>
       <GlobalState.Provider
         value={{ color, setcolor, bg, setbg, rotate, setrotate, }}
       >
@@ -23,7 +23,7 @@ function App() {
         <IconSection />
         <Footer />
       </GlobalState.Provider>
-    </>
+    </div>
   );
 }
 

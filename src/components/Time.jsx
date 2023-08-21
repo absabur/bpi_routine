@@ -51,7 +51,7 @@ function Time() {
         const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
         let monthName = months[date.getMonth()];
     
-        setDay(bar + " " + monthName + ", " +day);
+        setDay(bar + " " + monthName + ", " +day+ "");
         setTime(hours + ":" + minutes + ":" + seconds + amPm);
     
     

@@ -20,7 +20,7 @@ const routineData = [
       room: 'SUNDAY'
     },{
       p: 'p2',
-      subject: <GiTireIronCross />,
+      subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
       room: ''
     },
   ],

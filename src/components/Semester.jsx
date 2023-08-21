@@ -35,7 +35,7 @@ const Semester = ({ shift }) => {
         <div className="space"></div>
       </>
     );
-  } else if (tech === "Computer Technology" || tech === "Mining Technology") {
+  } else if (tech === "Computer Technology" || tech === "Mining Technology" || tech==="Tourism and Hospitality") {
     return (
       <>
         <div className="space"></div>
