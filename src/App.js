@@ -12,11 +12,15 @@ function App() {
   const [rotate, setrotate] = useState({ transform: "" });
   const [color, setcolor] = useState({ color: refreshColor });
   const [bg, setbg] = useState({ backgroundColor: refreshBgColor });
+  const [tech, setTech] = useState("");
+  const [shift, setShift] = useState("");
+  const [semester, setSemester] = useState("");
+  const [group, setGroup] = useState("");
 
   return (
     <div>
       <GlobalState.Provider
-        value={{ color, setcolor, bg, setbg, rotate, setrotate, }}
+        value={{ color, setcolor, bg, setbg, rotate, setrotate, tech, setTech, shift, setShift, semester, setSemester, group, setGroup }}
       >
         <RoutePath />
 

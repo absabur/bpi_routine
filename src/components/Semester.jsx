@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
+import GlobalState from "./GlobalState";
 
 const Semester = ({ shift }) => {
   const scroll = () => {
@@ -9,8 +10,15 @@ const Semester = ({ shift }) => {
       window.scrollTo(0, document.body.scrollHeight);
     }, 10);
   };
-  localStorage.setItem("shift", shift);
-  let tech = localStorage.getItem("tech");
+  // localStorage.setItem("shift", shift);
+  // let tech = localStorage.getItem("tech");
+
+  const { tech, setShift } = useContext(GlobalState);
+  if (shift) {
+    setShift(shift)
+  }else{
+    setShift("")
+  }
 
   if (tech === "Computer Science and Technology") {
     return (

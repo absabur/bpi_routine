@@ -1,4 +1,5 @@
-import React from "react";
+// saved routine render
+import React, { useContext } from "react";
 
 import "../Routines/Styling/routine.css";
 
@@ -91,506 +92,510 @@ import Th26 from "../Routines/th/th_2_6";
 
 import notFind from '../Routines/notFind'
 
-import Routine from "./Routine";
+import RoutineSaved from "./RoutineSaved";
+import GlobalState from "./GlobalState";
 
-const SavedRoutine = () => {
+const MyRoutine = () => {
 
-  let tech = localStorage.getItem("tech");
-  let shift = localStorage.getItem("shift");
-  let sem = localStorage.getItem("sem");
-  let grp = localStorage.getItem("group");
-
+  const tech = localStorage.getItem("tech");
+  const shift = localStorage.getItem("shift");
+  const semester = localStorage.getItem("semester");
+  const group = localStorage.getItem("group");
 
   const renderRoutine = () => {
     if (
       tech === "Computer Science and Technology" &&
       shift === "1st" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Cst12;
     } else if (
       tech === "Computer Science and Technology" &&
       shift === "1st" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Cst14;
     } else if (
       tech === "Computer Science and Technology" &&
       shift === "2nd" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Cst22;
     } else if (
       tech === "Computer Science and Technology" &&
       shift === "2nd" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Cst24;
     } else if (
       tech === "Computer Technology" &&
       shift === "1st" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Cmt16;
     } else if (
       tech === "Computer Technology" &&
       shift === "2nd" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Cmt26;
     } else if (
       tech === "Power Technology" &&
       shift === "1st" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Pt12  ;
     } else if (
       tech === "Power Technology" &&
       shift === "1st" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Pt14  ;
     } else if (
       tech === "Power Technology" &&
       shift === "1st" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Pt16  ;
     } else if (
       tech === "Power Technology" &&
       shift === "2nd" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Pt22  ;
     } else if (
       tech === "Power Technology" &&
       shift === "2nd" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Pt24  ;
     } else if (
       tech === "Power Technology" &&
       shift === "2nd" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Pt26  ;
     } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "1st" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Rac12  ;
     } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "1st" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Rac14  
     } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "1st" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Rac16  ;
     } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "2nd" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Rac22  ;
     } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "2nd" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Rac24  ;
     } else if (
       tech === "Refrigeration & Air Conditioning Technology" &&
       shift === "2nd" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Rac26  ;
     } else if (
       tech === "Electronics Technology" &&
       shift === "1st" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Ent12  ;
     } else if (
       tech === "Electronics Technology" &&
       shift === "1st" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Ent14  ;
     } else if (
       tech === "Electronics Technology" &&
       shift === "1st" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Ent16  ;
     } else if (
       tech === "Electronics Technology" &&
       shift === "2nd" &&
-      sem === "2nd"
+      semester === "2nd"
     ) {
       return Ent22  ;
     } else if (
       tech === "Electronics Technology" &&
       shift === "2nd" &&
-      sem === "4th"
+      semester === "4th"
     ) {
       return Ent24  ;
     } else if (
       tech === "Electronics Technology" &&
       shift === "2nd" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Ent26  ;
     } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "A"
+      semester === "2nd" &&
+      group  === "A"
     ) {
       return Ct12a ;
     } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "A"
+      semester === "4th" &&
+      group  === "A"
     ) {
       return Ct14a ;
     } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
-      sem === "6th" &&
-      grp === "A"
+      semester === "6th" &&
+      group  === "A"
     ) {
       return Ct16a ;
     } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "A"
+      semester === "2nd" &&
+      group  === "A"
     ) {
       return Ct22a ;
     } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "A"
+      semester === "4th" &&
+      group  === "A"
     ) {
       return Ct24a ;
     } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
-      sem === "6th" &&
-      grp === "A"
+      semester === "6th" &&
+      group  === "A"
     ) {
       return Ct26a ;
     } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "B"
+      semester === "2nd" &&
+      group  === "B"
     ) {
       return Ct12b;
     } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "B"
+      semester === "4th" &&
+      group  === "B"
     ) {
       return Ct14b;
     } else if (
       tech === "Civil Technology" &&
       shift === "1st" &&
-      sem === "6th" &&
-      grp === "B"
+      semester === "6th" &&
+      group  === "B"
     ) {
       return Ct16b;
     } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "B"
+      semester === "2nd" &&
+      group  === "B"
     ) {
       return Ct22b;
     } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "B"
+      semester === "4th" &&
+      group  === "B"
     ) {
       return Ct24b;
     } else if (
       tech === "Civil Technology" &&
       shift === "2nd" &&
-      sem === "6th" &&
-      grp === "B"
+      semester === "6th" &&
+      group  === "B"
     ) {
       return Ct26b;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "A"
+      semester === "2nd" &&
+      group  === "A"
     ) {
       return Et12a  ;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "A"
+      semester === "4th" &&
+      group  === "A"
     ) {
       return Et14a  ;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "6th" &&
-      grp === "A"
+      semester === "6th" &&
+      group  === "A"
     ) {
       return Et16a  ;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "A"
+      semester === "2nd" &&
+      group  === "A"
     ) {
       return Et22a  ;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "A"
+      semester === "4th" &&
+      group  === "A"
     ) {
       return Et24a  ;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "6th" &&
-      grp === "A"
+      semester === "6th" &&
+      group  === "A"
     ) {
       return Et26a  ;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "B"
+      semester === "2nd" &&
+      group  === "B"
     ) {
      return Et12b;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "B"
+      semester === "4th" &&
+      group  === "B"
     ) {
      return Et14b;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "6th" &&
-      grp === "B"
+      semester === "6th" &&
+      group  === "B"
     ) {
      return Et16b;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "B"
+      semester === "2nd" &&
+      group  === "B"
     ) {
      return Et22b;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "B"
+      semester === "4th" &&
+      group  === "B"
     ) {
      return Et24b;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "6th" &&
-      grp === "B"
+      semester === "6th" &&
+      group  === "B"
     ) {
      return Et26b;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "C"
+      semester === "2nd" &&
+      group  === "C"
     ) {
       return Et12c;
     } else if (
       tech === "Electrical Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "C"
+      semester === "4th" &&
+      group  === "C"
     ) {
       return Et14c;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "C"
+      semester === "2nd" &&
+      group  === "C"
     ) {
       return Et22c;
     } else if (
       tech === "Electrical Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "C"
+      semester === "4th" &&
+      group  === "C"
     ) {
       return Et24c;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "A"
+      semester === "2nd" &&
+      group  === "A"
     ) {
       return Mt12a;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "A"
+      semester === "4th" &&
+      group  === "A"
     ) {
       return Mt14a;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "6th" &&
-      grp === "A"
+      semester === "6th" &&
+      group  === "A"
     ) {
       return Mt16a;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "A"
+      semester === "2nd" &&
+      group  === "A"
     ) {
       return Mt22a;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "A"
+      semester === "4th" &&
+      group  === "A"
     ) {
       return Mt24a;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "6th" &&
-      grp === "A"
+      semester === "6th" &&
+      group  === "A"
     ) {
       return Mt26a;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "B"
+      semester === "2nd" &&
+      group  === "B"
     ) {
       return Mt12b;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "B"
+      semester === "4th" &&
+      group  === "B"
     ) {
       return Mt14b;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "6th" &&
-      grp === "B"
+      semester === "6th" &&
+      group  === "B"
     ) {
       return Mt16b;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "B"
+      semester === "2nd" &&
+      group  === "B"
     ) {
       return Mt22b;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "B"
+      semester === "4th" &&
+      group  === "B"
     ) {
       return Mt24b;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "6th" &&
-      grp === "B"
+      semester === "6th" &&
+      group  === "B"
     ) {
       return Mt26b;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "2nd" &&
-      grp === "C"
+      semester === "2nd" &&
+      group  === "C"
     ) {
       return Mt12c;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "1st" &&
-      sem === "4th" &&
-      grp === "C"
+      semester === "4th" &&
+      group  === "C"
     ) {
       return Mt14c;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "2nd" &&
-      grp === "C"
+      semester === "2nd" &&
+      group  === "C"
     ) {
       return Mt22c;
     } else if (
       tech === "Mechanical Technology" &&
       shift === "2nd" &&
-      sem === "4th" &&
-      grp === "C"
+      semester === "4th" &&
+      group  === "C"
     ) {
       return Mt24c;
     } else if (
       tech === "Mining & Mine Survey Technology" &&
       shift === "1st" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Mnt16;
     } else if (
       tech === "Mining & Mine Survey Technology" &&
       shift === "2nd" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Mnt26;
     }   else if (
       tech === "Tourism and Hospitality" &&
       shift === "1st" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Th16;
     } else if (
       tech === "Tourism and Hospitality" &&
       shift === "2nd" &&
-      sem === "6th"
+      semester === "6th"
     ) {
       return Th26;
     } 
     
     else {
-      return notFind
+      return [[{
+        p: "p3",
+        subject: "Save a routine first. If already save, then Saved data has been expire. Visit and save routine again.",
+        status: 404
+      }]]
     }
   };
   return (
     <>
       <div>
-        <Routine routineData={renderRoutine()} />
+        <RoutineSaved routineData={renderRoutine()} />
       </div>
     </>
   );
 };
 
-export default SavedRoutine;
+export default MyRoutine;

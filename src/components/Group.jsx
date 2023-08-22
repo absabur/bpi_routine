@@ -1,9 +1,10 @@
 // @ts-nocheck
-import React from "react";
+import React, { useContext } from "react";
 
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
 import RenderRoutine from "../Routines/RenderRoutine";
+import GlobalState from "./GlobalState";
 
 const Group = ({ semester }) => {
   const scroll = () => {
@@ -11,15 +12,21 @@ const Group = ({ semester }) => {
       window.scrollTo(0, document.body.scrollHeight - 850);
     }, 10);
   };
-  localStorage.setItem("sem", semester);
-  let tech = localStorage.getItem("tech");
-  let sem = localStorage.getItem("sem");
+  // localStorage.setItem("sem", semester);
+  // let tech = localStorage.getItem("tech");
+  // let sem = localStorage.getItem("sem");
+  const { tech, setSemester } = useContext(GlobalState);
+  if (semester) {
+    setSemester(semester)
+  }else{
+    setSemester("")
+  }
 
   if (
-    (tech === "Mechanical Technology" && sem === "2nd") ||
-    (tech === "Mechanical Technology" && sem === "4th") ||
-    (tech === "Electrical Technology" && sem === "2nd") ||
-    (tech === "Electrical Technology" && sem === "4th")
+    (tech === "Mechanical Technology" && semester === "2nd") ||
+    (tech === "Mechanical Technology" && semester === "4th") ||
+    (tech === "Electrical Technology" && semester === "2nd") ||
+    (tech === "Electrical Technology" && semester === "4th")
   ) {
     return (
       <>

@@ -11,7 +11,8 @@ import Group from "./Group";
 import Semester from "./Semester";
 import RenderRoutine from "../Routines/RenderRoutine";
 import Time from "./Time";
-import SavedRoutine from "./SavedRoutine";
+import SaveRoutine from "./SaveRoutine";
+import MyRoutine from "./MyRoutine";
 
 const RoutePath = () => {
   return (
@@ -24,16 +25,18 @@ const RoutePath = () => {
             <h1>Class Routine</h1>
           </div>
         </div>
-        <Home /><div style={{width:"100%", textAlign:"center", margin:"1rem 0"}}>
-          <Link className='saveRoutine' to="/loaded-routine">
-                Last visited routine.
+        <Home />
+        <div style={{width:"100%", textAlign:"center", margin:"1rem 0"}}>
+          <Link className='saveRoutine' to="/my-routine">
+                My saved routine.
           </Link>
         </div>
       </div>
       <Time />
       <Routes>
         <Route path="/" element={<Technology />} />
-        <Route path="/loaded-routine" element={<SavedRoutine />} />
+        <Route path="/loaded-routine" element={<SaveRoutine />} />
+        <Route path="/my-routine" element={<MyRoutine />} />
 
         <Route
           path="cst"

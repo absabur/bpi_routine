@@ -1,3 +1,4 @@
+// saved routine
 import React from 'react'
 import Period from '../Routines/CommonPartTable/Period'
 import Rotate from '../Routines/Styling/Rotate'
@@ -14,7 +15,10 @@ const Routine = ({routineData}) => {
   // let semester = localStorage.getItem("sem");
   // let grp = localStorage.getItem("group");
 
-  let { tech, shift, semester, group } = useContext(GlobalState);
+  const tech = localStorage.getItem("tech")
+  const shift = localStorage.getItem("shift")
+  const semester = localStorage.getItem("semester")
+  const group = localStorage.getItem("group")
 
   let routineHead = (
     <>

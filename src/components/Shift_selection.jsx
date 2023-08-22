@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
+import GlobalState from "./GlobalState";
 
 const Shift_selection = ({ technology }) => {
-  localStorage.setItem("tech", technology);
+  // localStorage.setItem("tech", technology);
+  const { setTech } = useContext(GlobalState);
+  if (technology) {
+    setTech(technology)
+  }else{
+    setTech("")
+  }
   const scroll = () => {
     setTimeout(() => {
       window.scrollTo(0, document.body.scrollHeight);
     }, 10);
   };
-  let tech = localStorage.getItem("tech");
-  if (tech === "Tourism and Hospitality" || tech === "Mining & Mine Survey Technology") {
+  // let tech = localStorage.getItem("tech");
+  if (technology === "Tourism and Hospitality" || technology === "Mining & Mine Survey Technology") {
     return (
       <>
         <div className="space"></div>
