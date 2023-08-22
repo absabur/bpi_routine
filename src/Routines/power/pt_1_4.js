@@ -26,14 +26,12 @@ const routineData = [
       code: "25841",
       room: "103",
     },
-
     {
       p: "p1",
       subject: "Suspention, Brake, Steering & Transmission System of",
       code: "26262",
       room: "103",
     },
-
     {
       p: "p3",
       subject: "Engineering Mechanics",
@@ -130,7 +128,6 @@ const routineData = [
       code: "26262",
       room: "1307",
     },
-
     {
       p: "p3",
       subject: "Progamming in C",

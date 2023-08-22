@@ -39,7 +39,7 @@ const technology = [
     to: "rac",
   },
   {
-    nam: "Mining Technology",
+    nam: "Mining & Mine Survey Technology",
     to: "mmst",
   },
   {

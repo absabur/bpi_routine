@@ -557,13 +557,13 @@ const RenderRoutine = ({ group }) => {
     ) {
       return Mt24c;
     } else if (
-      tech === "Mining Technology" &&
+      tech === "Mining & Mine Survey Technology" &&
       shift === "1st" &&
       sem === "6th"
     ) {
       return Mnt16;
     } else if (
-      tech === "Mining Technology" &&
+      tech === "Mining & Mine Survey Technology" &&
       shift === "2nd" &&
       sem === "6th"
     ) {

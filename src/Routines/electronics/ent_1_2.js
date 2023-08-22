@@ -106,7 +106,7 @@ const routineData = [
       p: "p3",
       subject: "Physical Education & Life skills Development",
       code: "25812",
-      room: "311",
+      room: "Field-2",
     },
   ],
   [

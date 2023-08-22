@@ -29,7 +29,7 @@ const routineData = [
     // {
     //   p: "p2",
     //   subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-    //   code: "SUNDAY",
+    //   code: "",
     //   room: "",
     // },
   ],

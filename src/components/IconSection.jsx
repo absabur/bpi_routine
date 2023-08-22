@@ -6,9 +6,9 @@ import { BiEnvelope } from "react-icons/bi";
 const IconSection = () => {
   return (
     <div className="icon-section">
-          <h1 className="gradient__text">
+          <h2 className="gradient__text">
             For any correction in routine knock me.
-          </h1>
+          </h2>
           <div className="icon">
             <a
               href="https://www.facebook.com/profile.php?id=100027012382655"
