@@ -74,8 +74,8 @@ const routineData = [
     },
     {
       p: "p1",
-      subject: "Circuits and Electrical Machine in RAC",
-      code: "27241",
+      subject: "Transport RAC",
+      code: "27242",
       room: "1402",
     },
     {

@@ -63,8 +63,8 @@ const routineData = [
     },
     {
       p: "p1",
-      subject: "Accounting",
-      code: "25841",
+      subject: "Social Science",
+      code: "25811",
       room: "1106",
     },
   ],

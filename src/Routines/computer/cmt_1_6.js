@@ -114,7 +114,7 @@ const routineData = [
       p: "p3",
       subject: "Microcontroller Application",
       code: "66663",
-      room: "SUNDAY",
+      room: "1204",
     },
     {
       p: "p1",
@@ -126,7 +126,7 @@ const routineData = [
       p: "p1",
       subject: "Database Management System",
       code: "66664",
-      room: "1204",
+      room: "1305",
     },
     {
       p: "p1",

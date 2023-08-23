@@ -100,25 +100,25 @@ const routineData = [
       p: "p1",
       subject: "Basic Electricity",
       code: "26711",
-      room: "14011105",
+      room: "1401",
     },
     {
       p: "p1",
       subject: "Mathematics-II",
       code: "25921",
-      room: "14011105",
+      room: "1401",
     },
     {
       p: "p1",
       subject: "Chemistry",
       code: "25913",
-      room: "14011105",
+      room: "1401",
     },
     {
       p: "p1",
       subject: "English-II",
       code: "25722",
-      room: "14011105",
+      room: "1401",
     },
   ],
 
@@ -176,7 +176,7 @@ const routineData = [
       p: "p3",
       subject: "Chemistry",
       code: "25913",
-      room: "SUNDAY",
+      room: "303",
     },
     {
       p: "p1",
