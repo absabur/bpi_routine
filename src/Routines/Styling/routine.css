@@ -316,12 +316,11 @@ html {
     min-height: 50px;
     max-height: 50px;
   }
-
-  .landscape {
-    display: block;
-  }
   .cap {
     padding: 5px;
+  }
+  .landscape {
+    display: block;
   }
 
   h2 {
@@ -346,6 +345,7 @@ html {
     font-size: 2.2vw;
   }
 }
+
 
 @media screen and (max-width: 450px) {
   .row {

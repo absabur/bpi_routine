@@ -85,6 +85,34 @@ img {
   letter-spacing: 0.5px;
 }
 
+.r-head{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.r2-head {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.r3-head {
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 2px double red;
+}
+.r2-head p, .r-head p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .time-sec {
   background-color: var(--white);
   color: var(--black);

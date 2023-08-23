@@ -13,7 +13,7 @@ const Rotate = () => {
     } else {
       e.target.innerHTML = "Potrait";
       setrotate(() => {
-        return { transform: "rotate(90deg) scale(1.2)", margin: "10rem auto" };
+        return { transform: "rotate(90deg) scale(1.2) scaleX(1.4)", margin: "16.5rem auto" };
       });
     }
   };

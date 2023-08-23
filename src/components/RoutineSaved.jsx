@@ -22,8 +22,12 @@ const Routine = ({routineData}) => {
 
   let routineHead = (
     <>
-      Depertment: {tech},<br /> {shift} Shift, {semester} Semester
-      {group ? <>, Group {group}</> : null}
+      <p style={{textAlign: 'center', marginBottom: '1rem'}}>Depertment: {tech},<br /> </p>
+      <div className='r-head'>
+        <p>{shift} Shift,</p> 
+        <p>{group ? <> Group {group},</> : null} </p> 
+        <p>{semester} Semester</p>
+      </div>
     </>
   );
   
@@ -36,8 +40,8 @@ const Routine = ({routineData}) => {
   return (
     <div className="main">
       <Rotate />
-      <div style={bg} className="cap">
-        <p style={color}>{routineHead}</p>
+      <div style={bg} className='r3-head'>
+        <div className='r2-head' style={color}>{routineHead}</div>
       </div>
 
       <div className="table" style={rotate}>
