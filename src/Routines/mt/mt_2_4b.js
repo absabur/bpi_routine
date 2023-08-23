@@ -24,7 +24,7 @@ const routineData = [
       p: "p3",
       subject: "Metallurgy",
       code: "27043",
-      room: "113110",
+      room: "113",
     },
   ],
 

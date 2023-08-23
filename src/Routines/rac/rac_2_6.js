@@ -12,7 +12,7 @@ const routineData = [
       p: "p3",
       subject: "Fluid Mechanics and Machineries",
       code: "67162",
-      room: "102/103",
+      room: "103/102",
     },
     {
       p: "p1",
