@@ -59,13 +59,13 @@ const routineData = [
       p: "p1",
       subject: "Electrical & Electronic Measurement-2",
       code: "66762",
-      room: "217",
+      room: "227",
     },
     {
       p: "p3",
       subject: "Micro Controller & PLC",
       code: "66868",
-      room: "217",
+      room: "227",
     },
   ],
 

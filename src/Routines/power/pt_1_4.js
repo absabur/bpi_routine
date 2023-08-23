@@ -179,7 +179,7 @@ const routineData = [
       p: "p3",
       subject: "IC Engine Details",
       code: "27141",
-      room: "1307",
+      room: "101",
     },
   ],
 ];
