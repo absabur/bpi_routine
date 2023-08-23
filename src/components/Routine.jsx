@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Period from '../Routines/CommonPartTable/Period'
 import Rotate from '../Routines/Styling/Rotate'
 import CustomColor from '../Routines/Styling/CustomColor'
@@ -6,6 +6,7 @@ import { useContext } from 'react'
 import GlobalState from './GlobalState'
 import TimeDuration2 from '../Routines/CommonPartTable/TimeDuration2'
 import TimeDuration1 from '../Routines/CommonPartTable/TimeDuration1'
+import PresentClass from './PresentClass'
 
 const Routine = ({routineData}) => {
 
@@ -35,6 +36,7 @@ const Routine = ({routineData}) => {
       <div style={bg} className="cap">
         <p style={color}>{routineHead}</p>
       </div>
+      {/* <PresentClass data={routineData}/> */}
 
       <div className="table" style={rotate}>
         {routineData && routineData[0][0].status === 404 ? null: tableHead}
