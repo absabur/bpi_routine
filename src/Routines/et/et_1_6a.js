@@ -1,4 +1,4 @@
-227import { GiTireIronCross } from "react-icons/gi";
+import { GiTireIronCross } from "react-icons/gi";
 
 const routineData = [
   [
@@ -34,7 +34,7 @@ const routineData = [
     },
   ],
 
-// ==============================
+// ================================
 
   [
     {
