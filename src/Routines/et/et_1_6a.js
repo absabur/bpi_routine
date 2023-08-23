@@ -1,4 +1,4 @@
-import { GiTireIronCross } from "react-icons/gi";
+227import { GiTireIronCross } from "react-icons/gi";
 
 const routineData = [
   [
@@ -88,13 +88,13 @@ const routineData = [
       p: "p3",
       subject: "Micro Controller & PLC",
       code: "66868",
-      room: "217",
+      room: "227",
     },
     {
       p: "p1",
       subject: "Industrial Management",
       code: "65852",
-      room: "217",
+      room: "227",
     },
     {
       p: "p3",
