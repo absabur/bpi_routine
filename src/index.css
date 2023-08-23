@@ -107,9 +107,11 @@ img {
   margin: 1rem auto;
   border-radius: 10px;
   border: 2px double red;
+  background-color: var(--black);
+  color: white;
 }
 .r2-head p, .r-head p {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -271,6 +273,10 @@ img {
 @media screen and (max-width: 620px) {
   .cap1 {
     padding: 0.3rem;
+  }
+  .r2-head p, .r-head p {
+    font-size: 15px;
+    font-weight: 700;
   }
 
   .gradient__text {
