@@ -25,14 +25,11 @@ const routineData = [
       subject: "Machine Shop Practice III",
       code: "27042",
       room: "114",
-    },
-    // {
-    //   p: "p1",
-    //   subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-    //   code: "",
-    //   room: "",
-    // },
+     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -71,6 +68,9 @@ const routineData = [
       room: "",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -97,6 +97,9 @@ const routineData = [
       room: "1103",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -135,6 +138,9 @@ const routineData = [
       room: "114",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",

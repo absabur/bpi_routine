@@ -37,14 +37,11 @@ const routineData = [
       subject: "Mechanical Engineering Drawing",
       code: "27021",
       room: "310",
-    },
-    // {
-    //   p: "p1",
-    //   subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-    //   code: "",
-    //   room: "",
-    // },
+     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -83,6 +80,9 @@ const routineData = [
       room: "301",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -121,6 +121,9 @@ const routineData = [
       room: "14011105",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -159,6 +162,9 @@ const routineData = [
       room: "305",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",

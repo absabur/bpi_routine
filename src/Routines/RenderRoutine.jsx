@@ -95,6 +95,7 @@ import notFind from './notFind'
 import Routine from "../components/Routine";
 import { Link } from "react-router-dom";
 import GlobalState from "../components/GlobalState";
+import { RiSave3Fill } from "react-icons/ri";
 
 const RenderRoutine = ({ group }) => {
 
@@ -603,9 +604,9 @@ const RenderRoutine = ({ group }) => {
       </h1>
       
       <div style={{width:"100%", textAlign:"center", margin:"1rem 0"}}>
-        <p style={{fontSize: '15px', fontWeight: "500", marginBottom: '1rem', color: "darkblue", padding: ' 0 1rem'}}>Save routine, next time you can open routine in one tap.</p>
-        <Link className='saveRoutine' to="/loaded-routine">
-              Save
+        <p style={{fontSize: '20px', fontWeight: "700", color: "darkblue", padding: ' 0 1rem'}}>Save routine, next time you can open routine in one tap.</p>
+        <Link className='save-button' to="/loaded-routine">
+              <RiSave3Fill style={{boxShadow: "0 0 10px black", borderRadius: "10px", margin: "1rem 0 0 0", backgroundColor:"white", color: 'rgb(54, 0, 18)'}}/>
         </Link>
       </div>
       <div>

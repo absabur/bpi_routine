@@ -25,14 +25,11 @@ const routineData = [
       subject: "Computer Office Application",
       code: "28511",
       room: "1203",
-    },
-    // {
-    //   p: "p1",
-    //   subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-    //   code: "",
-    //   room: "",
-    // },
+     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -65,6 +62,9 @@ const routineData = [
       room: "1304",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -103,6 +103,9 @@ const routineData = [
       room: "114",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -129,6 +132,9 @@ const routineData = [
       room: "1103",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",

@@ -9,30 +9,39 @@ const routineData = [
       room: "",
     },
     {
+      p: "p1",
+      subject: "Electrical & Electronic Measurement-2",
+      code: "66762",
+      room: "1104",
+    },
+    {
+      p: "p1",
+      subject: "Industrial Management",
+      code: "65852",
+      room: "1104",
+    },
+    {
+      p: "p1",
+      subject: "Alternating Current Machines-1",
+      code: "66761",
+      room: "1104",
+    },
+    {
+      p: "p1",
+      subject: "Communication Engineering",
+      code: "66867",
+      room: "1102",
+    },
+    {
       p: "p3",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-      code: "",
-      room: "",
+      subject: "Micro Controller & PLC",
+      code: "66868",
+      room: "227",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -42,29 +51,32 @@ const routineData = [
     },
     {
       p: "p3",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Alternating Current Machines-1",
+      code: "66761",
+      room: "1305",
     },
     {
       p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Industrial Management",
+      code: "65852",
+      room: "1102",
     },
     {
       p: "p2",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Transmission and Distribution of Electrical Power-1",
+      code: "66763",
+      room: "1102",
+    },
+    {
+      p: "p1",
+      subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
+      code: "",
+      room: "",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -74,29 +86,32 @@ const routineData = [
     },
     {
       p: "p3",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Electrical & Electronic Measurement-2",
+      code: "66762",
+      room: "201",
     },
     {
       p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Transmission and Distribution of Electrical Power-1",
+      code: "66763",
+      room: "1102",
     },
     {
       p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Alternating Current Machines-1",
+      code: "66761",
+      room: "1102",
     },
     {
       p: "p2",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
+      code: "",
+      room: "",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -105,30 +120,39 @@ const routineData = [
       room: "",
     },
     {
+      p: "p1",
+      subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
+      code: "",
+      room: "",
+    },
+    {
+      p: "p1",
+      subject: "Electrical & Electronic Measurement-2",
+      code: "66762",
+      room: "304",
+    },
+    {
+      p: "p1",
+      subject: "Micro Controller & PLC",
+      code: "66868",
+      room: "304",
+    },
+    {
+      p: "p1",
+      subject: "Communication Engineering",
+      code: "66867",
+      room: "304",
+    },
+    {
       p: "p3",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
-    },
-    {
-      p: "p2",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Transmission and Distribution of Electrical Power-1",
+      code: "66763",
+      room: "305",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -138,27 +162,27 @@ const routineData = [
     },
     {
       p: "p3",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Communication Engineering",
+      code: "66867",
+      room: "227",
     },
     {
       p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Micro Controller & PLC",
+      code: "66868",
+      room: "1104",
     },
     {
       p: "p1",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: "Alternating Current Machines-1",
+      code: "66761",
+      room: "1104",
     },
     {
       p: "p2",
-      subject: "SUNDAY",
-      code: "SUNDAY",
-      room: "SUNDAY",
+      subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
+      code: "",
+      room: "",
     },
   ],
 ];

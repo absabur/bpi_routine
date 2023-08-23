@@ -37,14 +37,11 @@ const routineData = [
       subject: "Basic Electronics",
       code: "26811",
       room: "314",
-    },
-    // {
-    //   p: "p1",
-    //   subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-    //   code: "",
-    //   room: "",
-    // },
+     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -71,6 +68,9 @@ const routineData = [
       room: "1102",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -109,6 +109,9 @@ const routineData = [
       room: "114101",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -135,6 +138,9 @@ const routineData = [
       room: "1102",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",

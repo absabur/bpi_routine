@@ -31,14 +31,11 @@ const routineData = [
       subject: "Bangla -II",
       code: "25721",
       room: "1305",
-    },
-    // {
-    //   p: "p1",
-    //   subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-    //   code: "",
-    //   room: "",
-    // },
+     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -65,6 +62,9 @@ const routineData = [
       room: "Field",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -97,6 +97,9 @@ const routineData = [
       room: "1305",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -123,6 +126,9 @@ const routineData = [
       room: "311",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",

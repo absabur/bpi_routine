@@ -25,14 +25,11 @@ const routineData = [
       subject: "Circuits and Electrical Machine in RAC",
       code: "27241",
       room: "104",
-    },
-    // {
-    //   p: "p1",
-    //   subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
-    //   code: "",
-    //   room: "",
-    // },
+     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -59,6 +56,9 @@ const routineData = [
       room: "1205",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -97,6 +97,9 @@ const routineData = [
       room: "1402",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",
@@ -135,6 +138,9 @@ const routineData = [
       room: "104",
     },
   ],
+
+// ==============================
+
   [
     {
       p: "p1",

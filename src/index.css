@@ -5,9 +5,11 @@
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
 
 :root {
-  --gray: rgb(19, 41, 46);
+  --gray: rgb(49, 126, 150);
   --white: #ffffff;
   --black: #000000;
   --tcolor: rgb(54, 0, 18);
@@ -33,6 +35,11 @@
 }
 .head-name h1 {
   margin: 1rem 0;
+  font-family: 'Leckerli One', cursive;
+  font-size: 25px;
+  background: -webkit-linear-gradient( #ffffff, #c6ffb7, #8f8f8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 img {
   width: 150px;
@@ -134,6 +141,11 @@ img {
   font-weight: 700;
   font-size: 15px;
   border-radius: 5px;
+}
+
+.save-button {
+  font-size: 3rem;
+
 }
 
 .warning {
