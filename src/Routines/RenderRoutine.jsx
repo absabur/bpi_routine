@@ -605,7 +605,7 @@ const RenderRoutine = ({ group }) => {
       </h1>
       
       <div style={{width:"100%", textAlign:"center", margin:"1rem 0"}}>
-        <p style={{fontSize: '20px', fontWeight: "700", color: "darkblue", padding: ' 0 1rem'}}>Save routine, next time you can open routine in one tap.</p>
+        <p style={{fontSize: '20px', fontWeight: "700", color: "darkblue", padding: ' 0 1rem'}}>Save to open routine in one click.</p>
         <Link className='save-button' to="/loaded-routine">
               <RiSave3Fill style={{boxShadow: "0 0 10px black", borderRadius: "10px", margin: "1rem 0 0 0", backgroundColor:"white", color: 'rgb(54, 0, 18)'}}/>
         </Link>
