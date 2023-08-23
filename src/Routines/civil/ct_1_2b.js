@@ -8,16 +8,16 @@ const routineData = [
       room: ''
     },{
       p: 'p3',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p2',
       subject: <GiTireIronCross style={{fontSize: "1.8rem"}}/>,
@@ -34,20 +34,20 @@ const routineData = [
       room: ''
     },{
       p: 'p3',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p2',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },
   ],
 
@@ -60,20 +60,20 @@ const routineData = [
       room: ''
     },{
       p: 'p3',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p2',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },
   ],
 
@@ -86,20 +86,20 @@ const routineData = [
       room: ''
     },{
       p: 'p3',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p2',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },
   ],
 
@@ -112,20 +112,20 @@ const routineData = [
       room: ''
     },{
       p: 'p3',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p1',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },{
       p: 'p2',
-      subject: 'SUNDAY',
-      room: 'SUNDAY'
+      subject: 'DEMO',
+      room: 'DEMO'
     },
   ],
 ]
