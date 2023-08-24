@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
-import GlobalState from "./GlobalState";
+import GlobalState from "../service/GlobalState";
 
 const Semester = ({ shift }) => {
   const scroll = () => {

@@ -9,10 +9,10 @@ import ShiftSelection from "./Shift_selection";
 import Error from "./Error";
 import Group from "./Group";
 import Semester from "./Semester";
-import RenderRoutine from "../Routines/RenderRoutine";
+import RenderRoutine from "./RenderRoutine";
 import Time from "./Time";
 import SaveRoutine from "./SaveRoutine";
-import MyRoutine from "./MyRoutine";
+import RenderSavedRoutine from "./RenderSavedRoutine";
 
 const RoutePath = () => {
   return (
@@ -36,7 +36,7 @@ const RoutePath = () => {
       <Routes>
         <Route path="/" element={<Technology />} />
         <Route path="/loaded-routine" element={<SaveRoutine />} />
-        <Route path="/my-routine" element={<MyRoutine />} />
+        <Route path="/my-routine" element={<RenderSavedRoutine />} />
 
         <Route
           path="cst"

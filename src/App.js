@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import GlobalState from "./components/GlobalState";
 import Footer from "./components/Footer";
 import RoutePath from "./components/RoutePath";
 import IconSection from "./components/IconSection";
+import GlobalState from "./service/GlobalState";
 
 let refreshColor = localStorage.getItem("color");
 let refreshBgColor = localStorage.getItem("bg");

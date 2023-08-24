@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
-import GlobalState from "./GlobalState";
+import GlobalState from "../service/GlobalState";
 
 const Shift_selection = ({ technology }) => {
-  // localStorage.setItem("tech", technology);
   const { setTech } = useContext(GlobalState);
   if (technology) {
     setTech(technology)

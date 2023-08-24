@@ -1,21 +1,13 @@
-import React, { useState } from 'react'
-import Period from '../Routines/CommonPartTable/Period'
-import Rotate from '../Routines/Styling/Rotate'
-import CustomColor from '../Routines/Styling/CustomColor'
+import React from 'react'
+import Period from './CommonPartTable/Period'
+import Rotate from '../components/Styling/Rotate'
+import CustomColor from '../components/Styling/CustomColor'
 import { useContext } from 'react'
-import GlobalState from './GlobalState'
-import TimeDuration2 from '../Routines/CommonPartTable/TimeDuration2'
-import TimeDuration1 from '../Routines/CommonPartTable/TimeDuration1'
-import PresentClass from './PresentClass'
+import TimeDuration2 from './CommonPartTable/TimeDuration2'
+import TimeDuration1 from './CommonPartTable/TimeDuration1'
+import GlobalState from '../service/GlobalState'
 
-const Routine = ({routineData}) => {
-
-  // let tech = localStorage.getItem("tech");
-  // let shift = localStorage.getItem("shift");
-  // let semester = localStorage.getItem("sem");
-  // let grp = localStorage.getItem("group");
-
-  let { tech, shift, semester, group } = useContext(GlobalState);
+const Routine = ({routineData, tech, shift, semester, group}) => {
 
   let routineHead = (
     <>
@@ -40,7 +32,6 @@ const Routine = ({routineData}) => {
       <div style={bg} className='r3-head'>
         <div className='r2-head' style={color}>{routineHead}</div>
       </div>
-      {/* <PresentClass data={routineData}/> */}
 
       <div className="table" style={rotate}>
         {routineData && routineData[0][0].status === 404 ? null: tableHead}

@@ -2,9 +2,9 @@
 
 import React, { useContext } from "react";
 
-import "../Routines/Styling/routine.css";
-import GlobalState from "./GlobalState";
-import MyRoutine from "./MyRoutine";
+import "../Routines/routine.css";
+import RenderSavedRoutine from "./RenderSavedRoutine";
+import GlobalState from "../service/GlobalState";
 
 const SaveRoutine = () => {
   const { tech, shift, semester, group } = useContext(GlobalState);
@@ -19,7 +19,7 @@ const SaveRoutine = () => {
     <>
       <h1 style={{color: 'green', marginBottom: '0'}}>Routine has been saved successfully.</h1>
       <div>
-        <MyRoutine />
+        <RenderSavedRoutine />
       </div>
     </>
   );

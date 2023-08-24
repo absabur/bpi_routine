@@ -3,8 +3,8 @@ import React, { useContext } from "react";
 
 import { Link, Outlet } from "react-router-dom";
 import { BsArrowDownShort } from "react-icons/bs";
-import RenderRoutine from "../Routines/RenderRoutine";
-import GlobalState from "./GlobalState";
+import RenderRoutine from "./RenderRoutine";
+import GlobalState from "../service/GlobalState";
 
 const Group = ({ semester }) => {
   const scroll = () => {
