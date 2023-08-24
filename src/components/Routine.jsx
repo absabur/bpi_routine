@@ -45,7 +45,7 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
   const { color, bg, rotate, } = useContext(GlobalState);
   return (
     <div className="main">
-      <Rotate />
+      {routineData && routineData[0][0].status === 404 ? null: <Rotate />}
       {routineData && routineData[0][0].status === 404 ? null:
       <div style={bg} className='r3-head'>
         <div className='r2-head' style={color}>{routineHead}</div>
