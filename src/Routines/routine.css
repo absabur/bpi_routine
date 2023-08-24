@@ -98,6 +98,10 @@ html {
   background-color: var(--rgb(146, 248, 201));
 }
 
+.main {
+  position: relative;
+}
+
 .table {
   width: 98%;
   margin: 1rem auto;
@@ -182,6 +186,36 @@ html {
   max-width: 37.4375%;
   min-width: 37.4375%;
   width: 100%;
+}
+
+.hide {
+  height: 0;
+  transition: all 0.4s;
+  visibility: hidden;
+  margin: 0;
+}
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  padding-left: 1rem;
+  width: 100%;
+  visibility: visible;
+  transition: all 0.4s;
+  border: 2px solid black;
+}
+
+.details-cross {
+  margin: 0.5rem;
+  padding: 3px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: black;
 }
 
 

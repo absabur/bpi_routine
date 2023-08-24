@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Period from './CommonPartTable/Period'
 import Rotate from '../components/Styling/Rotate'
 import CustomColor from '../components/Styling/CustomColor'
@@ -6,8 +6,11 @@ import { useContext } from 'react'
 import TimeDuration2 from './CommonPartTable/TimeDuration2'
 import TimeDuration1 from './CommonPartTable/TimeDuration1'
 import GlobalState from '../service/GlobalState'
+import { ImCross } from "react-icons/im";
 
 const Routine = ({routineData, tech, shift, semester, group}) => {
+  const [value, setValue] = useState("")
+  const [details, setDetails] = useState("hide")
 
   let routineHead = (
     <>
@@ -20,6 +23,20 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
     </>
   );
   
+  const handleClick = async (e) => {
+    const val = await e.target.innerText
+    setValue(val)
+    if (val==="Room: ") {
+      setDetails("hide")
+    }else{
+      setDetails("show")
+    }
+  }
+
+  const handleCross = () => {
+    setDetails("hide")
+  }
+
   const tableHead = <>
     <Period />
     {shift==="1st"?<TimeDuration1 />:<TimeDuration2 />}
@@ -33,13 +50,18 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
         <div className='r2-head' style={color}>{routineHead}</div>
       </div>
 
+      <div style={bg} className={details}>
+        <p style={color}>{value}</p>
+        <ImCross className='details-cross' onClick={handleCross}/>
+      </div>
+
       <div className="table" style={rotate}>
         {routineData && routineData[0][0].status === 404 ? null: tableHead}
         {
           routineData && routineData.map((row)=>(
             <div className='row'>
                 {row && row.map((sub)=>(
-                  <div className={`p ${sub.p}`} style={bg}>
+                  <div onClick={handleClick} className={`p ${sub.p}`} style={bg}>
                     <p style={color}>
                       {sub.subject} {sub.code?<>({sub.code})</>:null}<br />
                       {sub.room ? <span>Room: </span>: null}{sub.room}
@@ -49,7 +71,6 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
             </div>
           ))
         }
-        
       </div>
       <CustomColor />
     </div>
