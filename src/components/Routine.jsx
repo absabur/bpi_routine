@@ -46,9 +46,11 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
   return (
     <div className="main">
       <Rotate />
+      {routineData && routineData[0][0].status === 404 ? null:
       <div style={bg} className='r3-head'>
         <div className='r2-head' style={color}>{routineHead}</div>
       </div>
+      }
 
       <div style={bg} className={details}>
         <p style={color}>{value}</p>
