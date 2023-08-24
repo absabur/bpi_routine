@@ -50,13 +50,7 @@ const routineData = [
       room: "",
     },
     {
-      p: "p1",
-      subject: "DC Machine",
-      code: "26742",
-      room: "1103",
-    },
-    {
-      p: "p1",
+      p: "p2",
       subject: "DC Machine",
       code: "26742",
       room: "1103",

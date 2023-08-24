@@ -51,8 +51,8 @@ const routineData = [
     },
     {
       p: "p2",
-      subject: "Digital Electronics -II",
-      code: "26841",
+      subject: "Accounting",
+      code: "25841",
       room: "313",
     },
     {
@@ -109,8 +109,8 @@ const routineData = [
     },
     {
       p: "p2",
-      subject: "Communication Engineering",
-      code: "26842",
+      subject: "DC Machine",
+      code: "26742",
       room: "313",
     },
     {

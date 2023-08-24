@@ -86,8 +86,8 @@ const routineData = [
     },
     {
       p: "p2",
-      subject: "TV Broadcasting and Studio",
-      code: "66862",
+      subject: "Microprocessor and Interfacing",
+      code: "66662",
       room: "1308",
     },
     {
@@ -115,8 +115,8 @@ const routineData = [
     },
     {
       p: "p2",
-      subject: "Microprocessor and Interfacing",
-      code: "66662",
+      subject: "TV Broadcasting and Studio",
+      code: "66862",
       room: "1308",
     },
     {
