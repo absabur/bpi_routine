@@ -24,9 +24,9 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
   );
   
   const handleClick = async (e) => {
-    const val = await e.target.innerText
+    const val = await e.target.textContent
     setValue(val)
-    if (val==="Room: ") {
+    if (val==="Room: " || val==="Subject: SUNDAY, , " || val==="Subject: MONDAY, , " || val==="Subject: TUESDAY, , " || val==="Subject: WEDNESDAY, , " || val==="Subject: THURSDAY, , ") {
       setDetails("hide")
     }else{
       setDetails("show")
@@ -61,8 +61,8 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
                 {row && row.map((sub)=>(
                   <div onClick={handleClick} className={`p ${sub.p}`} style={bg}>
                     <p style={color}>
-                      {sub.subject} {sub.code?<>({sub.code})</>:null}<br />
-                      {sub.room ? <span>Room: </span>: null}{sub.room}
+                      <span style={{display: "none"}}>Subject: </span>{sub.subject}<span style={{display: "none"}}>,</span> {sub.code?<><span style={{display: "none"}}>Code: </span>({sub.code})</>:null}<br />
+                      <span style={{display: "none"}}>, </span>{sub.room ? <span>Room: </span>: null}{sub.room}
                     </p>
                   </div>
                 ))}
