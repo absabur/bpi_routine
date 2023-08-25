@@ -17,11 +17,13 @@ function App() {
   const [semester, setSemester] = useState("");
   const [group, setGroup] = useState("");
 
+
   return (
     <div>
       <GlobalState.Provider
         value={{ color, setcolor, bg, setbg, rotate, setrotate, tech, setTech, shift, setShift, semester, setSemester, group, setGroup }}
       >
+
         <RoutePath />
 
         <IconSection />

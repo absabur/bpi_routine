@@ -5,6 +5,7 @@ import CustomColor from '../components/Styling/CustomColor'
 import { useContext } from 'react'
 import TimeDuration2 from './CommonPartTable/TimeDuration2'
 import TimeDuration1 from './CommonPartTable/TimeDuration1'
+import ClearCache from './ClearCache'
 import GlobalState from '../service/GlobalState'
 import { ImCross } from "react-icons/im";
 
@@ -70,6 +71,7 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
           ))
         }
       </div>
+      <ClearCache />
       <CustomColor />
     </div>
   )
