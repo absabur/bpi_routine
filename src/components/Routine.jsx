@@ -33,10 +33,6 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
     }
   }
 
-  const handleCross = () => {
-    setDetails("hide")
-  }
-
   const tableHead = <>
     <Period />
     {shift==="1st"?<TimeDuration1 />:<TimeDuration2 />}
@@ -54,7 +50,7 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
 
       <div style={bg} className={details}>
         <p style={color}>{value}</p>
-        <ImCross className='details-cross' onClick={handleCross}/>
+        <ImCross className='details-cross' onClick={()=>setDetails("hide")}/>
       </div>
 
       <div className="table" style={rotate}>
