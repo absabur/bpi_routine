@@ -5,7 +5,7 @@
   padding: 0;
 }
 html {
-  background-color: rgb(243, 255, 220);
+  background-image: linear-gradient( #ff569d, #9febbd, #cb7afa);
 }
 
 .cap {
