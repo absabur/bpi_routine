@@ -12,7 +12,9 @@ export default function App() {
             });
         });
         serviceWorker()
-        window.location.reload();
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
     };
  
     return (
