@@ -93,7 +93,7 @@ const routineData = [
       subject: "Environmental Studies",
       code: "29041",
       room: "302",
-      teacher: "SR",
+      teacher: "Sajedur Rahman",
     },
   ],
 
@@ -125,7 +125,7 @@ const routineData = [
       subject: "Environmental Studies",
       code: "29041",
       room: "1203",
-      teacher: "SR",
+      teacher: "Sajedur Rahman",
     },
     {
       p: "p3",
@@ -157,7 +157,7 @@ const routineData = [
       subject: "Environmental Studies",
       code: "29041",
       room: "1208",
-      teacher: "SR",
+      teacher: "Sajedur Rahman",
     },
     {
       p: "p2",
