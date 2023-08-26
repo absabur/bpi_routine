@@ -27,7 +27,7 @@ const routineData = [
       subject: "Digital Electronics-II",
       code: "26841",
       room: "311",
-      teacher: "ENT-1",
+      teacher: "Sumon Reza",
     },
     // {
     //   p: "p2",
@@ -111,7 +111,7 @@ const routineData = [
       subject: "Digital Electronics-II",
       code: "26841",
       room: "1203",
-      teacher: "ENT-1",
+      teacher: "Sumon Reza",
     },
     {
       p: "p1",
