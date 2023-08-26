@@ -3,7 +3,7 @@ import shift2 from '../components/CommonPartTable/shift2'
 
 const activeTime = () => {
     let date = new Date();
-    let hours = date.getHours();
+    let hours = date.getHours()+10;
     let min = date.getMinutes();
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let day = weekday[date.getDay()].toUpperCase();

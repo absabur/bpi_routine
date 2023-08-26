@@ -100,13 +100,15 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  border: 2px dashed rgb(255, 255, 255);
+  outline: 2px dashed rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 .r3-head {
   width: 80%;
   margin: 1rem auto;
   border-radius: 10px;
-  border: 2px double red;
   background-color: var(--black);
   color: white;
 }
