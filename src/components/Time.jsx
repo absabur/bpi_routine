@@ -8,8 +8,7 @@ function Time() {
   
   useEffect(() => {
     const interval = setInterval(() => {
-  
-
+        
         let date = new Date();
         let hours = date.getHours();
         let minutes = date.getMinutes();

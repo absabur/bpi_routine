@@ -4,7 +4,7 @@ import "../../Routines/routine.css";
 import GlobalState from "../../service/GlobalState";
 
 const CustomColor = () => {
-  const { color, bg, setcolor, setbg } = useContext(GlobalState);
+  const { color, bg, setcolor, setbg, setActiveBg } = useContext(GlobalState);
 
   const handleColorChange = (event) => {
     const name = event.target.name;
@@ -21,6 +21,9 @@ const CustomColor = () => {
     localStorage.setItem('bg', value);
     setbg(() => {
       return { [name]: event.target.value };
+    });
+    setActiveBg(() => {
+      return { [name]: event.target.value , border: "3px double red" };
     });
   };
 
