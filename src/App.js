@@ -12,7 +12,7 @@ function App() {
   const [rotate, setrotate] = useState({ transform: "" });
   const [color, setcolor] = useState({ color: refreshColor });
   const [bg, setbg] = useState({ backgroundColor: refreshBgColor });
-  const [activeBg, setActiveBg] = useState({ backgroundColor: refreshBgColor, outline: " 3px solid black", zIndex: "10", border: "3px solid white"});
+  const [activeBg, setActiveBg] = useState({ backgroundColor: refreshBgColor, zIndex: "10", border: "2px solid white", boxShadow: "0 0 1px 2px red"});
   const [tech, setTech] = useState("");
   const [shift, setShift] = useState("");
   const [semester, setSemester] = useState("");

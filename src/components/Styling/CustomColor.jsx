@@ -23,7 +23,7 @@ const CustomColor = () => {
       return { [name]: event.target.value };
     });
     setActiveBg(() => {
-      return { [name]: event.target.value , outline: " 3px solid black", zIndex: "10", border: "3px solid white"};
+      return { [name]: event.target.value , zIndex: "10", border: "2px solid white", boxShadow: "0 0 1px 2px red"};
     });
   };
 
