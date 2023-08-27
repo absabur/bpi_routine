@@ -20,10 +20,10 @@ const activeTime = () => {
         if ((hours === 9 && min >= 30) || (hours === 10 && min < 15 )) {
             return shift1[3].subject
         }
-        if ((hours ===10 && min >= 15) || (hours === 11 && min < 0) ) {
+        if ((hours ===10 && min >= 15)) {
             return shift1[4].subject
         }
-        if ((hours === 11 && min >= 0) || (hours === 11 && min < 45) ) {
+        if ((hours === 11 && min < 45) ) {
             return shift1[5].subject
         }
         if ((hours === 11 && min >= 45) || (hours === 12 && min < 30) ) {
@@ -32,13 +32,14 @@ const activeTime = () => {
         if ((hours === 12 && min >= 30) || (hours === 13 && min < 15) ) {
             return shift1[7].subject
         }
+
         if ((hours === 13 && min >= 30) || (hours === 14 && min < 15) ) {
             return shift2[1].subject
         }
-        if ((hours === 14 && min >= 15) || (hours === 15 && min < 0) ) {
+        if ((hours === 14 && min >= 15)) {
             return shift2[2].subject
         }
-        if ((hours === 15 && min >= 0) || (hours === 15 && min < 45) ) {
+        if ((hours === 15 && min < 45) ) {
             return shift2[3].subject
         }
         if ((hours ===15 && min >= 45) || (hours === 16 && min < 30) ) {
@@ -47,10 +48,10 @@ const activeTime = () => {
         if ((hours === 16 && min >= 30) || (hours === 17 && min < 15) ) {
             return shift2[5].subject
         }
-        if ((hours === 17 && min >= 15) || (hours === 18 && min < 0) ) {
+        if ((hours === 17 && min >= 15)) {
             return shift2[6].subject
         }
-        if ((hours === 18 && min >= 0) || (hours === 18 && min < 45) ) {
+        if ((hours === 18 && min < 45) ) {
             return shift2[7].subject
         }
     }
