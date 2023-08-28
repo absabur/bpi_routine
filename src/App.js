@@ -20,7 +20,7 @@ function App() {
 
 
   return (
-    <div>
+    <div style={{minHeight: "100vh", height: "min-contect"}}>
       <GlobalState.Provider
         value={{ color, setcolor, bg, setbg, activeBg, setActiveBg, rotate, setrotate, tech, setTech, shift, setShift, semester, setSemester, group, setGroup }}
       >
