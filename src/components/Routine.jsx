@@ -62,7 +62,7 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
         <ImCross className='details-cross' onClick={()=>setDetails("hide")}/>
       </div>
 
-      <div className="table" style={rotate}>
+      <div className={`table ${rotate}`}>
         {routineData && routineData[0][0].status === 404 ? null: tableHead}
         {
           routineData && routineData.map((row)=>(

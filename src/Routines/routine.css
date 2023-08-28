@@ -110,7 +110,7 @@ html {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  transition: all 1s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .row {
@@ -361,6 +361,12 @@ html {
   }
   .landscape {
     display: block;
+  }
+  
+  .rotate {
+    transform: rotate(90deg) scale(1.2) scaleX(1.4);
+    margin: 16.5rem auto;
+    transition: all 0.6s ease;
   }
 
   h2 {

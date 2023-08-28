@@ -7,14 +7,10 @@ const Rotate = () => {
   const portrait = (e) => {
     if (e.target.textContent === "Potrait") {
       e.target.innerHTML = "Landscape";
-      setrotate(() => {
-        return { transform: "rotate(0deg) scale(1)" };
-      });
+      setrotate("");
     } else {
       e.target.innerHTML = "Potrait";
-      setrotate(() => {
-        return { transform: "rotate(90deg) scale(1.2) scaleX(1.4)", margin: "16.5rem auto" };
-      });
+      setrotate("rotate");
     }
   };
   return (
