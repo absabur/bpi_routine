@@ -9,7 +9,7 @@ let refreshColor = localStorage.getItem("color");
 let refreshBgColor = localStorage.getItem("bg");
 
 function App() {
-  const [rotate, setrotate] = useState({ transform: "" });
+  const [rotate, setrotate] = useState("");
   const [color, setcolor] = useState({ color: refreshColor });
   const [bg, setbg] = useState({ backgroundColor: refreshBgColor });
   const [activeBg, setActiveBg] = useState({ backgroundColor: refreshBgColor, zIndex: "10", border: "2px solid white", boxShadow: "0 0 1px 2px red"});

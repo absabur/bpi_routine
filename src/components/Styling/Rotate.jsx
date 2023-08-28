@@ -1,21 +1,21 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import GlobalState from '../../service/GlobalState';
 
 const Rotate = () => {
-    const {setrotate} = useContext(GlobalState)
+    const {rotate, setrotate} = useContext(GlobalState)
+    const [toggle, setToggle] = useState(false)
 
-  const portrait = (e) => {
-    if (e.target.textContent === "Potrait") {
-      e.target.innerHTML = "Landscape";
-      setrotate("");
-    } else {
-      e.target.innerHTML = "Potrait";
+  const portrait = async(e) => {
+    if (!toggle) {
       setrotate("rotate");
+    } else {
+      setrotate("");
     }
+    await setToggle(!toggle)
   };
   return (
     <button className="landscape" onClick={portrait} type="button">
-        Landscape
+        {rotate==="rotate"?<>Potrait</>:<>Landscape</>}
     </button>
   )
 }
