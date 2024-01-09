@@ -66,9 +66,9 @@ const Routine = ({routineData, tech, shift, semester, group}) => {
         {routineData && routineData[0][0].status === 404 ? null: tableHead}
         {
           routineData && routineData.map((row)=>(
-            <div className='row'>
+            <div className='row' key={Math.random()}>
               {row && row.map((sub)=>(
-                <div onClick={handleClick} className={`p ${sub.p}`} style={sub.subject===active?activeBg:bg}>
+                <div key={Math.random()} onClick={handleClick} className={`p ${sub.p}`} style={sub.subject===active?activeBg:bg}>
                   <p style={color}>
                     <span style={{display: "none"}}>Subject: </span>{sub.subject}<span style={{display: "none"}}>,</span> {sub.code?<span style={{display: "none"}}>Code: {sub.code}</span>:null}<br />
                     {sub.teacher?<span style={{display: 'none'}}>, Teacher: {sub.teacher}</span>: null}

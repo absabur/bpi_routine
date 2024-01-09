@@ -53,14 +53,14 @@ const Technology = () => {
 
   const handleSearch = (searchValue) => {
     let value = searchValue.toLowerCase();
-    const newTech =
-      technology &&
-      technology.filter((tech) => {
-        const techName = tech.nam.toLowerCase();
-        return techName.startsWith(value);
-      });
+    const searchRegExp = new RegExp(".*" + value + ".*", "i");
+    const newTech = technology.filter((tech) => {
+      const techName = tech.nam.toLowerCase();
+      return searchRegExp.test(techName);
+    });
     setfilterTechArray(newTech);
   };
+
   return (
     <>
       <div className="nav_display">
@@ -73,11 +73,9 @@ const Technology = () => {
           <Search onSearch={handleSearch} />
         </h1>
         {filterTechArray.map((tech) => (
-          <>
-            <Link key={new Date().toString()} to={tech.to}>
-              <h3>{tech.nam}</h3>
-            </Link>
-          </>
+          <Link key={Math.random()} to={tech.to}>
+            <h3>{tech.nam}</h3>
+          </Link>
         ))}
         {/* <Link to="th">
           <h3>Tourism and Hospitality</h3>

@@ -196,6 +196,7 @@ img {
   margin-top: 1rem;
 }
 .icon-section {
+  margin-top: auto;
   font-size: 20px;
   width: 100%;
   background-color: var(--gray);

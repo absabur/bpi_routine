@@ -5,7 +5,7 @@ import shift2 from './shift2'
 import activeTime from "../../service/activeTime"
 
 const TimeDuration = ({shift}) => {
-    const [active, setActive] = useState("")
+    const [active, setActive] = useState(null)
     const { color, bg, activeBg } = useContext(GlobalState);
 
     setInterval(() => {
@@ -16,7 +16,7 @@ const TimeDuration = ({shift}) => {
         return(
             <div className='row'>
                 {shift1.map((time)=>(
-                    <div className={`h ${time.p}`} style={time.subject===active?activeBg:bg}>
+                    <div key={Math.random()} className={`h ${time.p}`} style={time.subject===active?activeBg:bg}>
                         <p style={color}>
                             {time.subject}
                         </p>
@@ -28,7 +28,7 @@ const TimeDuration = ({shift}) => {
         return(
             <div className='row'>
                 {shift2.map((time)=>(
-                    <div className={`h ${time.p}`} style={time.subject===active?activeBg:bg}>
+                    <div key={Math.random()} className={`h ${time.p}`} style={time.subject===active?activeBg:bg}>
                         <p style={color}>
                             {time.subject}
                         </p>
